@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tutotec</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta content="Domínguez Mario, Hernández Alinne, Escobedo Joahan" name="author">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/stylelogin.css">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/estiloprincipal.css" rel="stylesheet">
+  <link href="assets/css/estiloiniciosesion.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #EFDDA9;">
+  <!-- ======= Header ======= -->
+  <!--
+  <header id="header" class="header fixed-top d-flex align-items-center" style="background-color: #EFDDA9;">
+            <div class="container-fluid ">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                     <div class="logo">
+                        <a href="index.html"><img src="images/TutoLogo.png" alt="#" /></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                     <div class="right_bottun">
+                        <ul class="conat_info d_none ">
+                           <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+  </header>-->
+  <!-- End Header -->
+  <main id="main">
+    <div class="col-md-4 col-sm-4">
+      <div class="logo">
+         <a href="index.html"><img src="images/TutoLogo.png" class="imagenLogo" alt="#" /></a>
+      </div>
+   </div>
+
+    <!-- ======= Breadcrumbs ======= -->
+    
+    <div class="breadcrumbs">
+      <br> <div class="d-flex justify-content-between align-items-center">
+         <div class="container" data-aos="fade-up">
+       <section id="contact" class="contact">
+         <div class="container" data-aos="fade-up">
+
+            <!-- ======= Menu De inicio de sesion ======= -->
+   <section id="menu" class="menu">
+     <div class="container" data-aos="fade-up">
+
+       <div class="section-header">
+         <p style="font-family: 'Julius Sans One'; color: #CF8D48;">¿Qué tipo de <span style="color: #CF8D48;">Jaguar</span> eres?</p>
+       </div>
+
+       <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+         <li class="nav-item">
+           <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-alumnos">
+             <h4>Alumno</h4>
+           </a>
+         </li><!-- End tab nav item -->
+
+         <li class="nav-item">
+           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-tutor">
+             <h4>Tutor</h4>
+           </a>
+          </li><!-- End tab nav item -->
+       </ul>
+
+       <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+         <div class="tab-pane fade active show" id="menu-alumnos">
+
+           <div class="tab-header text-center">
+             
+           </div>
+
+           <div class="row gy-5">
+
+             <form action="forms/login.py" method="post" role="form" class="php-email-form p-3 p-md-4">
+               <div class="text-center"><p>Ingresa tu numero de control</p></div>
+               <input type="text" class="form-control" name="no_control" id="no_control" placeholder="Número de Control" required><br>
+               <div class="text-center"><p>Ingresa tu contraseña</p></div>
+               <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+               <div class="my-3">
+                 <div class="loading">Loading</div>
+                 <div class="error-message"></div>
+                 <div class="sent-message">Your message has been sent. Thank you!</div>
+               </div>
+               <div class="text-center"><button type="submit">Iniciar Sesión</button></div>
+               <br>
+               <br>
+               <div class="text-center"><a href="registro.html" class="link-success" >Registrarse</a></div>
+             </form><!-- End Contact Form -->
+
+
+           </div>
+
+           </div>
+         </div><!-- End Starter Menu Content -->
+
+         <div class="tab-pane fade" id="menu-tutor">
+
+           <div class="tab-header text-center">
+             <br><br><br>
+           </div>
+           
+           <div class="row gy-5">
+
+             <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+               <div class="text-center"><p>Ingresa tu correo electronico</p></div>
+               <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required><br>
+               <div class="text-center"><p>Ingresa tu contraseña</p></div>
+               <input type="password" class="form-control" name="pass" id="pass" placeholder="Contraseña" required>
+               <div class="my-3">
+                 <div class="loading">Loading</div>
+                 <div class="error-message"></div>
+                 <div class="sent-message">Your message has been sent. Thank you!</div>
+               </div>
+               <div class="text-center"><button type="submit">Iniciar Sesión</button></div>
+             </form><!-- End Contact Form -->
+           </div>
+
+           </div>
+         </div><!-- End Breakfast Menu Content -->
+
+   </section><!-- End Menu Section -->
+
+
+ </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class=" "><i class=" "></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

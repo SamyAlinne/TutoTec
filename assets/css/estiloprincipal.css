@@ -1,0 +1,172 @@
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+body {
+  background: url(../images/fondo-inicio.jpg);
+  background-size: auto 78%;
+  background-repeat: no-repeat;
+  min-height: 1150px;
+  background-position: right top;
+}
+
+.breadcrumbs {
+  padding: 15px 0;
+  background-image: url('/images/fondo-inicio.jpg');
+  margin-top: 20px;
+}
+.breadcrumbs p{
+  padding: 15px 0;
+  margin-top: 20px;
+}
+.breadcrumbs .section-header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.header .logo img {
+    max-height: 90px;
+    margin-right: 6px;
+    background-color: #EFDDA9;
+  }
+  @media (max-width: 575px) {
+    .header .logo img {
+        max-height: 60px;
+        margin-right: 6px;
+      }
+  }
+  .header .btn-book-a-table:hover,
+.header .btn-book-a-table:focus:hover {
+  color: #EFDDA9;
+}
+
+.header .idiomas img {
+    max-height: 40px;
+    margin-right: 6px;
+  }
+  .hero h2 {
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+  }
+  .hero .col-lg-5 {
+    width: 50%;
+  }
+  .about .about-img {
+    min-height: 450px;
+  }
+  .about .col-lg-7 {
+    width: 39%;
+  }
+  .about .col-lg-5 {
+    width: 61%;
+  }
+  .about .content p {
+    font-size: 11px;
+    text-align: justify;
+  }
+  .about h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: var(--font-secondary);
+  }
+  .about .section-header span{
+    color:#7FA62D;
+  }
+  .about .call-us p {
+    color:#7FA62D;
+  }
+  .menu .section-header span{
+    color:#F2A71B;
+    font-family: Fyodor;
+    font-size: 50px;
+  }
+  .gallery .section-header span{
+    color:#BF1592;
+  }
+  .stats-counter {
+    background: rgba(206, 18, 18, 0.8);
+    background-size: cover;
+    padding: 80px 0;
+  }
+  .stats-counter .stats-item {
+    padding: 20px;
+    width: 100%;
+  }
+  .stats-counter .stats-item h3 {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 228, 229);
+    margin-bottom: 5px;
+  }
+  .stats-counter .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(226, 228, 229);
+  }
+  .gallery .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #BF1592;
+  }
+  @media (min-width: 992px) {
+    .gallery .swiper-wrapper {
+      padding: 40px 0;
+    }
+  
+    .gallery .swiper-slide-active {
+      border: 6px solid #BF1592;
+      padding: 4px;
+      background: #fff;
+      z-index: 1;
+      transform: scale(1.2);
+    }
+  }
+  .menu .tab-content .menu-item .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #D91122;
+  }
+
+  .book-a-table{
+    margin: 0 auto;
+  }
+
+  .book-a-table .php-email-form {
+    padding: 40px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .book-a-table .php-email-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.book-a-table .php-email-form select:focus {
+  border-color: var(--color-primary);
+}
+
+.book-a-table .php-email-form select {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+      background: var(--color-primary);
+      border: 0;
+      padding: 12px 40px;
+      color: #fff;
+      transition: 0.4s;
+      border-radius: 50px;
+    }
+    
+    .contact .php-email-form button[type=submit]:hover {
+      background: #ec2727;
+    }
+    
