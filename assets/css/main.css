@@ -79,7 +79,6 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 30px;
-  background-color: #fff;
 }
 
 .section-header h2 {
@@ -1430,4 +1429,121 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Sections Registro
+--------------------------------------------------------------*/
+.section2 {
+  overflow: hidden;
+  padding-bottom: 50px;
+  background: #CDC9D1;
+  border-radius: 120px;
+}
+
+.section2-bg {
+  background: #CDC9D1;
+}
+
+.section2-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section2-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #7f7f90;
+  text-transform: uppercase;
+  font-family: var(--font-default);
+}
+
+
+
+.section2-header p {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: 'Julius Sans One'; 
+  color: #fff;
+}
+
+.section2-header p span {
+  color: #fff;
+  font-family: 'Fyodor'; 
+}
+@media (max-width: 575px) {
+  .section2-header p {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Julius Sans One'; 
+    color: #fff;
+  }
+  .section2-header p span {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Fyodor'; 
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs2 Registro Alumno
+--------------------------------------------------------------*/
+.breadcrumbs2 {
+  padding: 15px 0;
+  margin-top: 15px;
+}
+
+@media (max-width: 575px) {
+  .breadcrumbs2 {
+    margin-top: 5px;
+    width: auto;
+  }
+}
+
+.breadcrumbs2 h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.breadcrumbs2 ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs2 ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs2 ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #676775;
+  content: "/";
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs2 .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs2 h2 {
+    margin-bottom: 10px;
+  }
+
+  .breadcrumbs2 ol {
+    display: block;
+  }
+
+  .breadcrumbs2 ol li {
+    display: inline-block;
+  }
 }
