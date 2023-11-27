@@ -45,13 +45,14 @@
             <!-- ======= Menu De inicio de sesion ======= -->
    <section id="menu" class="menu">
     <div class="formato">
-     <div class="container" data-aos="fade-up" style="transform: rotate(26deg);">
+     <div class="container" data-aos="fade-up">
 
        <div class="section-header">
          <p style="font-family: 'Julius Sans One'; color: #CF8D48;">¿Qué tipo de <span style="color: #CF8D48;">Jaguar</span> eres?</p>
        </div>
 
        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        
 
          <li class="nav-item">
            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-alumnos">
@@ -76,11 +77,9 @@
 
            <div class="row gy-5" style="background-color: #344959;">
 
-             <form action="forms/login.py" method="post" role="form" class="php-email-form p-3 p-md-4">
-               <div class="text-center"><p>Ingresa tu numero de control</p></div>
-               <input type="text" class="form-control" name="no_control" id="no_control" placeholder="Número de Control" required><br>
-               <div class="text-center"><p>Ingresa tu contraseña</p></div>
-               <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+             <form action="forms/login.py" method="post" role="form" class="php-email-form p-3 p-md-4"><br>
+               <input type="email" class="form-control" name="no_control" id="no_control" placeholder="Correo Electrónico" style="font-family: 'Gafata';" required><br><br>
+               <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required><br>
                <div class="my-3">
                  <div class="loading">Loading</div>
                  <div class="error-message"></div>
