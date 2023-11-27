@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
+
 section .contact{
     padding: 20px 0;
   }
@@ -14,7 +16,7 @@ section .contact{
       align-items: center;
     }
     
-    .contact .php-email-form .error-message {
+    .error-message {
       display: none;
       color: #fff;
       background: #83010e;
@@ -23,11 +25,11 @@ section .contact{
       font-weight: 600;
     }
     
-    .contact .php-email-form .error-message br+br {
+    .error-message br+br {
       margin-top: 25px;
     }
     
-    .contact .php-email-form .sent-message {
+    .sent-message {
       display: none;
       color: #fff;
       background: #960505;
@@ -36,7 +38,7 @@ section .contact{
       font-weight: 600;
     }
     
-    .contact .php-email-form .loading {
+    .loading {
       display: none;
       background: #fff;
       text-align: center;
@@ -70,31 +72,32 @@ section .contact{
     }
     
     .contact .php-email-form input {
-      height: 48px;
+      height: 60px;
       margin: 0 auto;
+      font-size: 24px;
     }
     
     .contact .php-email-form textarea {
       padding: 10px 12px;
     }
     
-    .contact .php-email-form button[type=submit] {
+    button[type=submit] {
       /*Style*/
       color: #B08B53;
       text-align: center;
-      font-family: Inter;
+      font-family: 'Fyodor';
       font-size: 24px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
 
       border-radius: 10px;
-      font-size: 24px;
+      font-size: 20px;
       background: #F7F7F9;
       box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
       /*Layout*/
       height: 53px;
-      padding: 5px;
+      padding: 15px;
       align-content: center; 
       gap: 3px;
       margin-top: 20px;
@@ -103,7 +106,6 @@ section .contact{
       width: 217px;
       padding: 0px 8px;
       align-items: center;
-      gap: 3px;
       margin: 0 auto;
       display: flex;
       justify-content: center; 
@@ -128,20 +130,34 @@ section .contact{
     }
 
     .formInicio {
-      width: 592px;
-      height: 100px;
+      width: 65%;
+      height: 20%;
       border-radius: 24px;
       background: #EFDDA9;
-      font-family: 'Arial';
+      font-family: 'Gafata';
       color: #000;
       text-align: center;
-      font-family: Gafata;
-      font-size: 100px;
-      font-style: bold;
-      font-weight: 400;
-      line-height: normal;
+      font-size: 100%;
+      font-weight: 500;
+      line-height:normal;
       align-items: center;
       margin: 0 auto;
       display: flex;
       justify-content: center; 
+      box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .contenedorAzul {
+      width: auto;
+      height: auto;
+      min-height: 750px;
+      padding: 50px;
+      flex-shrink: 0;
+      background: #344959;
+      overflow: hidden;
+      display: flex;
+      justify-content: center; 
+      border-radius: 120px;
+      display: block;
+      margin: 0 auto;
     }

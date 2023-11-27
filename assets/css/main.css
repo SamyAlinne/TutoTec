@@ -44,12 +44,12 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: #EFDDA9;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ec2727;
+  color: #CF8D48;
   text-decoration: none;
 }
 
@@ -93,15 +93,30 @@ section {
   font-family: var(--font-default);
 }
 
+
+
 .section-header p {
   margin: 0;
   font-size: 48px;
   font-weight: 400;
-  font-family: var(--font-primary);
+  font-family: 'Julius Sans One'; 
+  color: #CF8D48;
 }
 
 .section-header p span {
-  color: var(--color-primary);
+  color: #CF8D48;
+}
+@media (max-width: 575px) {
+  .section-header p {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Julius Sans One'; 
+    color: #CF8D48;
+  }
+  .section-header p span {
+    font-size: 20px;
+    color: #CF8D48;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -114,7 +129,8 @@ section {
 
 @media (max-width: 575px) {
   .breadcrumbs {
-    margin-top: 70px;
+    margin-top: 60px;
+    width: auto;
   }
 }
 
@@ -642,10 +658,11 @@ section {
 }
 
 .menu .nav-link h4 {
-  font-size: 48px;
+  font-size: 250%;
   font-weight: 400;
   margin: 0;
   font-family: Fyodor;
+  align-content: center;
 }
 
 @media (max-width: 575px) {
@@ -675,42 +692,8 @@ section {
   margin-bottom: 0;
 }
 
-.menu .tab-content .tab-header h3 {
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--color-primary);
-}
 
-.menu .tab-content .menu-item {
-  -moz-text-align-last: center;
-  text-align-last: center;
-}
 
-.menu .tab-content .menu-item .menu-img {
-  padding: 0 60px;
-  margin-bottom: 15px;
-}
-
-.menu .tab-content .menu-item h4 {
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--color-secondary);
-  font-family: var(--font-secondary);
-  font-weight: 30px;
-  margin-bottom: 5px;
-}
-
-.menu .tab-content .menu-item .ingredients {
-  font-family: var(--font-secondary);
-  color: #8d8d9b;
-  margin-bottom: 5px;
-}
-
-.menu .tab-content .menu-item .price {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--color-primary);
-}
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1362,10 +1345,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  font-size: 14px;
+  font-size: 24px;
   background-color: #1f1f24;
   padding: 50px 0;
   color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }
 
 .footer .icon {

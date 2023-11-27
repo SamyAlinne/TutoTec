@@ -31,7 +31,7 @@
   <main id="main">
     <div class="col-md-4 col-sm-4">
       <div class="logo">
-         <a href="index.html"><img src="images/TutoLogo.png" class="imagenLogo" alt="#" /></a>
+         <a href="index.html"><img src="images/TutoLogo.png" class="imagenLogo" alt="#" ></a>
       </div>
    </div>
 
@@ -39,98 +39,87 @@
   <div class="breadcrumbs">
     <div class="d-flex justify-content-between align-items-center" style="background-image: url(/images/cuadroblanco.png); background-size: cover;">
      <div class="container" data-aos="fade-up">
-       <section id="contact" class="contact">
+       
          <div class="container" data-aos="fade-up">
 
             <!-- ======= Menu De inicio de sesion ======= -->
    <section id="menu" class="menu">
      <div class="container" data-aos="fade-up">
-
        <div class="section-header">
-         <p style="font-family: 'Julius Sans One'; color: #CF8D48;">¿Qué tipo de <span style="color: #CF8D48;">Jaguar</span> eres?</p>
+         <p>¿Qué tipo de <span style="color: #CF8D48;">Jaguar</span> eres?</p>
        </div>
-
-       <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-        
-
-         <li class="nav-item">
-           <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-alumnos">
-             <h4>Alumno</h4>
-           </a>
-         </li><!-- End tab nav item -->
-
-         <li class="nav-item">
-           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-tutor">
-             <h4>Tutor</h4>
-           </a>
+      
+      <div class="contenedorAzul">
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-alumnos">
+              <h4>Alumno</h4>
+            </a>
           </li><!-- End tab nav item -->
-       </ul>
+ 
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-tutor">
+              <h4>Tutor</h4>
+            </a>
+           </li><!-- End tab nav item -->
+        </ul>
+ 
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+           <div class="tab-pane fade active show" id="menu-alumnos">
+             <div class="tab-header text-center">            
+            </div>
+             <div class="row gy-5">
+               <form action="forms/loginalumno.py" method="post" role="form" class="php-email-form p-3 p-md-4">
+                <input type="text" class="formInicio" name="no_control" id="no_control" placeholder="No. Control" required><br><br>
+                <input type="password" class="formInicio" name="password" id="password" placeholder="Contraseña" required><br>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Iniciar Sesión</button></div>
+                <br>
+                <br>
+                <div class="text-center"><a href="registro.html" style="color: #FFF; font-size: 24px;" ><u>¡Aún no me he registrado!</u></a></div>
+              </form><!-- End Contact Form -->
+            </div>
+          </div>
 
-       <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-
-         <div class="tab-pane fade active show" id="menu-alumnos">
-
-           <div class="tab-header text-center">
-             
-           </div>
-
-           <div class="row gy-5" style="background-color: #344959;">
-
-             <form action="forms/login.py" method="post" role="form" class="php-email-form p-3 p-md-4"><br><br>
-               <input type="email" class="formInicio" name="no_control" id="no_control" placeholder="Correo Electrónico" required><br><br>
-               <input type="password" class="formInicio" name="password" id="password" placeholder="Contraseña" required><br>
-               <div class="my-3">
-                 <div class="loading">Loading</div>
-                 <div class="error-message"></div>
-                 <div class="sent-message">Your message has been sent. Thank you!</div>
-               </div>
-               <div class="text-center"><button type="submit">Iniciar Sesión</button></div>
-               <br>
-               <br>
-               <div class="text-center"><a href="registro.html" style="color: #FFF;" ><u>Registrarse</u></a></div>
-             </form><!-- End Contact Form -->
-
-
-           </div>
-
-           </div>
-         </div><!-- End Starter Menu Content -->
+         
 
          <div class="tab-pane fade" id="menu-tutor">
 
            <div class="tab-header text-center">
-             <br><br><br>
            </div>
-           
-           <div class="row gy-5">
-
-             <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
-               <div class="text-center"><p>Ingresa tu correo electronico</p></div>
-               <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required><br>
-               <div class="text-center"><p>Ingresa tu contraseña</p></div>
-               <input type="password" class="form-control" name="pass" id="pass" placeholder="Contraseña" required>
+            <div class="row gy-5">
+              <form action="forms/logintutor.py" method="post" role="form" class="php-email-form p-3 p-md-4">
+               <input type="email" class="formInicio" name="emailTutor" id="emailTutor" placeholder="Correo Electrónico" required><br><br>
+               <input type="password" class="formInicio" name="passwordTutor" id="passwordTutor" placeholder="Contraseña" required><br>
                <div class="my-3">
                  <div class="loading">Loading</div>
                  <div class="error-message"></div>
                  <div class="sent-message">Your message has been sent. Thank you!</div>
                </div>
                <div class="text-center"><button type="submit">Iniciar Sesión</button></div>
+               <br>
+               <br>
+               <div class="text-center"><a href="registro.html" style="color: #FFF; font-size: 24px;" ><u>¡Aún no me he registrado!</u></a></div>
              </form><!-- End Contact Form -->
            </div>
 
            </div>
-         </div><!-- End Breakfast Menu Content -->
+         </div><!-- End Contenedor Azul -->
+         </section>
         </div>
-   </section><!-- End Menu Section -->
-
-
+      </div>
+    </div>
+</div>
  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
-    
-  </footer><!-- End Footer -->
+    <p>Creado por: <a href="index.html">CodeSlaves®</a></p>
+  </footer>
   <!-- End Footer -->
 
   <a href="#" class=" "><i class=" "></i></a>

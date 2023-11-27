@@ -22,15 +22,26 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
-.header .logo img {
-    max-height: 90px;
-    margin-right: 6px;
+.logo img {
+    max-height: 164px;
+    margin-left: 15%;
     background-color: #EFDDA9;
+    width: 164px;
+    height: 118px;
+ 
+  }
+  @media (max-width: 651px) {
+    .logo img {
+        height: 80px;
+        width: auto;
+        margin-bottom: 70px;
+      }
   }
   @media (max-width: 575px) {
-    .header .logo img {
+    .logo img {
         max-height: 60px;
-        margin-right: 6px;
+        width: auto;
+        margin-bottom: 70px;
       }
   }
   .header .btn-book-a-table:hover,
@@ -80,7 +91,14 @@ body {
   .menu .section-header span{
     color:#F2A71B;
     font-family: Fyodor;
-    font-size: 50px;
+    font-size: 48px;
+  }
+  @media (max-width: 575px) {
+    .menu .section-header span{
+      color:#F2A71B;
+      font-family: Fyodor;
+      font-size: 20px;
+    }
   }
   .gallery .section-header span{
     color:#BF1592;
