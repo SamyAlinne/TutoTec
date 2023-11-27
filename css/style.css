@@ -1044,7 +1044,7 @@ ul.location_icon li a:hover {
 }
 
 .copyright {
-     background-color: #f8640f;
+     background: linear-gradient(0deg, #CF8D48 -65.46%, #E9AE56 156.7%);
      margin-top: 70px;
      padding: 20px 0;
 }
