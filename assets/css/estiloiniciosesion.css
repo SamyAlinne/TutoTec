@@ -1,195 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
 
-section .contact{
-    padding: 20px 0;
+section .contact {
+  padding: 20px 0;
+}
+.contact .php-email-form {
+  width: 100%;
+  margin-top: 10px;
+  background: #344959;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 10px;
+  width: 50%;
+  align-items: center;
+}
+
+.error-message {
+  display: none;
+  color: #fff;
+  background: #83010e;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.error-message br + br {
+  margin-top: 25px;
+}
+
+.sent-message {
+  display: none;
+  color: #fff;
+  background: #960505;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #960505;
+  border-top-color: #fff;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  width: 592px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #efdda9;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.contact .php-email-form input {
+  height: 60px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+button[type="submit"] {
+  /*Style*/
+  color: #b08b53;
+  text-align: center;
+  font-family: "Fyodor";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  border-radius: 10px;
+  font-size: 20px;
+  background: #f7f7f9;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  /*Layout*/
+  height: 53px;
+  padding: 15px;
+  align-content: center;
+  gap: 3px;
+  margin-top: 20px;
+  max-width: 600;
+  display: flex;
+  width: 217px;
+  padding: 0px 8px;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #cdc9d1;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
   }
-    .contact .php-email-form {
-      width: 100%;
-      margin-top: 10px;
-      background: #344959;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-    }
-    
-    .contact .php-email-form .form-group {
-      padding-bottom: 10px;
-      width: 50%;
-      align-items: center;
-    }
-    
-    .error-message {
-      display: none;
-      color: #fff;
-      background: #83010e;
-      text-align: left;
-      padding: 15px;
-      font-weight: 600;
-    }
-    
-    .error-message br+br {
-      margin-top: 25px;
-    }
-    
-    .sent-message {
-      display: none;
-      color: #fff;
-      background: #960505;
-      text-align: center;
-      padding: 15px;
-      font-weight: 600;
-    }
-    
-    .loading {
-      display: none;
-      background: #fff;
-      text-align: center;
-      padding: 15px;
-    }
-    
-    .contact .php-email-form .loading:before {
-      content: "";
-      display: inline-block;
-      border-radius: 50%;
-      width: 24px;
-      height: 24px;
-      margin: 0 10px -6px 0;
-      border: 3px solid #960505;
-      border-top-color: #fff;
-      animation: animate-loading 1s linear infinite;
-    }
-    
-    .contact .php-email-form input,
-    .contact .php-email-form textarea {
-      width: 592px;
-      height: auto;
-      flex-shrink: 0;
-      border-radius: 24px;
-      background: #EFDDA9;
-    }
-    
-    .contact .php-email-form input:focus,
-    .contact .php-email-form textarea:focus {
-      border-color: var(--color-primary);
-    }
-    
-    .contact .php-email-form input {
-      height: 60px;
-      margin: 0 auto;
-      font-size: 24px;
-    }
-    
-    .contact .php-email-form textarea {
-      padding: 10px 12px;
-    }
-    
-    button[type=submit] {
-      /*Style*/
-      color: #B08B53;
-      text-align: center;
-      font-family: 'Fyodor';
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
 
-      border-radius: 10px;
-      font-size: 20px;
-      background: #F7F7F9;
-      box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
-      /*Layout*/
-      height: 53px;
-      padding: 15px;
-      align-content: center; 
-      gap: 3px;
-      margin-top: 20px;
-      max-width: 600;
-      display: flex;
-      width: 217px;
-      padding: 0px 8px;
-      align-items: center;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center; 
-    }
-    
-    .contact .php-email-form button[type=submit]:hover {
-      background: #CDC9D1;
-    }
-    
-    @keyframes animate-loading {
-      0% {
-        transform: rotate(0deg);
-      }
-    
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    .contact .form-control {
-      width: 30%;
-      align-items: center;
-    }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contact .form-control {
+  width: 30%;
+  align-items: center;
+}
 
-    .formInicio {
-      width: 65%;
-      height: 20%;
-      border-radius: 24px;
-      background: #EFDDA9;
-      font-family: 'Gafata';
-      color: #000;
-      text-align: center;
-      font-size: 100%;
-      font-weight: 500;
-      line-height:normal;
-      align-items: center;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center; 
-      box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
-    }
+.formInicio {
+  width: 65%;
+  height: 20%;
+  border-radius: 24px;
+  background: #efdda9;
+  font-family: "Gafata";
+  color: #000;
+  text-align: center;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: normal;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+}
 
-    .contenedorAzul {
-      width: auto;
-      height: auto;
-      min-height: 750px;
-      padding: 50px;
-      flex-shrink: 0;
-      background: #344959;
-      overflow: hidden;
-      display: flex;
-      justify-content: center; 
-      border-radius: 120px;
-      display: block;
-      margin: 0 auto;
-    }
+.contenedorAzul {
+  width: auto;
+  height: auto;
+  min-height: 750px;
+  padding: 50px;
+  flex-shrink: 0;
+  background: #344959;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 120px;
+  display: block;
+  margin: 0 auto;
+}
 
-    .contenedorAzulR {
-      width: auto;
-      height: auto;
-      min-height: 900px;
-      padding: 50px;
-      flex-shrink: 0;
-      background: #344959;
-      overflow: hidden;
-      display: flex;
-      justify-content: center; 
-      border-radius: 120px;
-      display: block;
-      margin: 0 auto;
-    }
+.contenedorAzulR {
+  width: auto;
+  height: auto;
+  min-height: 900px;
+  padding: 50px;
+  flex-shrink: 0;
+  background: #344959;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 120px;
+  display: block;
+  margin: 0 auto;
+}
 
-    .contenedorBlanco{
-      width: auto;
-      height: auto;
-      min-width: 968px;
-      min-height: 900px;
-      margin: 10px;
-      padding: 10px;
-      flex-shrink: 0;
-      background: #fff;
-      overflow: hidden;
-      display: flex;
-      justify-content: center; 
-      border-radius: 90px;
-      display: block;
-      margin: 0 auto;
-    }
+.contenedorBlanco {
+  width: auto;
+  height: auto;
+  min-width: 968px;
+  min-height: 900px;
+  margin: 10px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-shrink: 0;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Julius Sans One";
+}
+
+.contenedorBlanco p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 24px;
+}
+
+.tableRegistro {
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  border-collapse: collapse;
+  align-items: center;
+}
+.tableRegistro td {
+  width: 30%;
+}
+.tableRegistro tbody {
+  align-items: center;
+}
+.tableRegistro td input {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #5c8494;
+  border: #5c8494;
+  padding-left: 25px;
+  color: #fff;
+}
+.tableRegistro td button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  height: 48px;
+  width: 90%;
+}
+.tableRegistro button[type="submit"] {
+  /*Style*/
+  color: #344959;
+  text-align: center;
+  font-family: Fyodor;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: #344959;
+  border-radius: 10px;
+  font-size: 20px;
+  background: #cdc9d1;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  /*Layout*/
+  height: 53px;
+  padding: 15px;
+  align-content: center;
+  gap: 3px;
+  max-width: 600;
+  display: flex;
+  width: 217px;
+  padding: 0px 8px;
+  align-items: center;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btnSubir {
+  /*Style*/
+  border-radius: 10px;
+  background: #344959;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*Layout*/
+  display: flex;
+  width: 267px;
+  height: 53px;
+  padding: 0px 8px;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
