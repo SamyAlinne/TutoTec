@@ -23,10 +23,9 @@ body {
   padding-bottom: 20px;
 }
 .logo img {
-    max-height: 164px;
+    max-height: 102.21px;
     margin-left: 15%;
-    width: 164px;
-    height: 118px;
+    width: 139px;
  
   }
   @media (max-width: 651px) {

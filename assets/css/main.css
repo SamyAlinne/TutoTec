@@ -1436,7 +1436,7 @@ section {
 --------------------------------------------------------------*/
 .section2 {
   overflow: hidden;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   background: #CDC9D1;
   border-radius: 120px;
 }
@@ -1447,7 +1447,6 @@ section {
 
 .section2-header {
   text-align: center;
-  padding-bottom: 30px;
 }
 
 .section2-header h2 {
@@ -1465,7 +1464,7 @@ section {
 
 .section2-header p {
   margin: 0;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 400;
   font-family: 'Julius Sans One'; 
   color: #fff;
@@ -1493,8 +1492,6 @@ section {
 # Breadcrumbs2 Registro Alumno
 --------------------------------------------------------------*/
 .breadcrumbs2 {
-  padding: 15px 0;
-
 }
 
 @media (max-width: 575px) {
