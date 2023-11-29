@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
+@import url("https://db.onlinewebfonts.com/c/ff8d333744c79e02371ad74ca79dd9a3?family=Fyodor+Bold+Expanded");
 body {
   background: url(../images/fondo-inicio.jpg);
   background-size: auto 78%;

@@ -1,0 +1,158 @@
+/* Importar fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@800&family=Gafata&display=swap");
+@import url("https://db.onlinewebfonts.com/c/ff8d333744c79e02371ad74ca79dd9a3?family=Fyodor+Bold+Expanded");
+
+/* Main Con tamaño del carnet */
+main {
+  width: 560px;
+  height: 980px;
+  background: #fff;
+}
+
+/* Encabezado del carnet */
+.headerC {
+  /* Layout*/
+  width: auto;
+  height: 116px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  /* Style */
+  background: #ffc25b;
+}
+.headerC p {
+  color: #fff;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Fyodor;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.5px;
+  text-align: center;
+}
+.headerC img {
+  width: auto;
+  height: 100%;
+  padding: 15px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: #fff;
+  margin-left: 25px;
+}
+
+/* Foto del carnet */
+.foto {
+  width: auto;
+  height: 330px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+.fotoFondo {
+  width: 320px;
+  height: 320px;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 1;
+}
+.fotoCirculo {
+  /* Layout */
+  width: 205.12px;
+  height: 205.12px;
+  flex-shrink: 0;
+  z-index: 2;
+  /* Style */
+  fill: #d9d9d9;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.35));
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Nombre del carnet */
+.nombre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.nombre p {
+  /* Style */
+  color: #cf8d48;
+  text-align: center;
+  font-family: Julius Sans One;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+/* Datos del carnet */
+.datos {
+  width: auto;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.datos p {
+  /* Style */
+  color: #b6b4bc;
+  font-family: Anek Bangla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.datos span {
+  color: #000;
+  font-family: Gafata;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+/* Footer del carnet */
+.footer {
+  width: auto;
+  height: 200px;
+  padding-top: 10px;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+.linea {
+  /* Layout */
+  margin-top: 10px;
+  width: 80%;
+  height: 6px;
+  margin-bottom: 10px;
+  /* Style */
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer img {
+  width: 74px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+

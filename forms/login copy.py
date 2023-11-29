@@ -1,24 +1,25 @@
-# get firestore data
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
-cred = credentials.Certificate("/usr/firestore/database.json")
-firebase_admin.initialize_app(cred)
-db = firestore.client()
+#!C:/Python311/python.exe
+import mysql.connector
+import os
+import cgi
+import cgitb
+cgitb.enable()
+print("Content-type: text/html")
+print()
     
 metodo = os.environ["REQUEST_METHOD"]
 
 if metodo == "POST":
     datos = cgi.FieldStorage()
-    nc = datos.getvalue("no_control")
-    p = datos.getvalue("password")
+    c = datos.getvalue("emailTutor")
+    p = datos.getvalue("passwordTutor")
 
-    print("No. Control:", nc)
+    print("Correo:", c)
     print("Contraseña:", p)
 
     con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd')
     cursor = con.cursor()
-    sql = "SELECT * FROM alumnos WHERE no_control='{}' AND password='{}'".format(nc,p)
+    sql = "SELECT * FROM tutores WHERE correo='{}' AND password='{}'".format(c,p)
     cursor.execute(sql)
     result = cursor.fetchone()
     if result:
