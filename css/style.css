@@ -315,6 +315,12 @@ ul.conat_info li a {
   font-size: 30px;
 }
 
+ul.conat_info li button {
+     color: #fff;
+     display: inline-block;
+     font-size: 30px;
+   }
+   
 ul.conat_info li a:hover {
   color: #fff;
 }
@@ -331,6 +337,7 @@ ul.conat_info li a:hover {
   background: transparent;
   position: absolute;
   z-index: 999;
+  display: flex;
 }
 
 /** banner section **/
@@ -1114,7 +1121,6 @@ ul.location_icon li a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  align-items: center;
   /* Style */
   border-radius: 30px;
   background: #cdc9d1;
@@ -1161,7 +1167,7 @@ ul.location_icon li a:hover {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .columna {
   width: calc(33.33% - 100);
@@ -1213,4 +1219,41 @@ ul.location_icon li a:hover {
   max-width: 600;
   align-content: center;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  font-family: Julius Sans One;
+  font-weight: 500;
+}
+@media (max-width: 780px) {
+     .btnDetalle {
+          margin-left: 5px;
+          width: auto;
+          height: 100%;
+          padding: 5px;
+          border-radius: 10px;
+          border: rgba(52, 73, 89, 1);
+          background-color: rgba(52, 73, 89, 1);
+          color: rgba(255, 255, 255, 1);
+          font-size: 12px;
+          max-width: 200;
+          align-content: center;
+          box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+          font-family: Julius Sans One;
+          font-weight: 500;
+          text-align: center;
+        }
+   }
+.welcome-text {
+  font-size: 18px;
+  margin-top: 7%;
+  font-family: Julius Sans One;
+  font-weight: 600;
+}
+
+@media (max-width: 780px) {
+  .welcome-text {
+    font-size: 16px;
+    margin-top: 5%;
+  }
+}
+.nav2 {
+     margin-bottom: 50px;
 }
