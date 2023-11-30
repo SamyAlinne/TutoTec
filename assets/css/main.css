@@ -12,7 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Amatic SC", sans-serif;
   --font-secondary: "Inter", sans-serif;
 }
@@ -40,16 +42,15 @@ body {
   background-repeat: no-repeat;
   min-height: 1150px;
   background-position: right top;
-  
 }
 
 a {
-  color: #EFDDA9;
+  color: #efdda9;
   text-decoration: none;
 }
 
 a:hover {
-  color: #CF8D48;
+  color: #cf8d48;
   text-decoration: none;
 }
 
@@ -92,29 +93,27 @@ section {
   font-family: var(--font-default);
 }
 
-
-
 .section-header p {
   margin: 0;
   font-size: 48px;
   font-weight: 400;
-  font-family: 'Julius Sans One'; 
-  color: #CF8D48;
+  font-family: "Julius Sans One";
+  color: #cf8d48;
 }
 
 .section-header p span {
-  color: #CF8D48;
+  color: #cf8d48;
 }
 @media (max-width: 575px) {
   .section-header p {
     margin: 0;
     font-size: 20px;
-    font-family: 'Julius Sans One'; 
-    color: #CF8D48;
+    font-family: "Julius Sans One";
+    color: #cf8d48;
   }
   .section-header p span {
     font-size: 20px;
-    color: #CF8D48;
+    color: #cf8d48;
   }
 }
 
@@ -148,11 +147,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #676775;
@@ -272,7 +271,6 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  border-bottom: 1px solid #fff;
 }
 
 @media (max-width: 575px) {
@@ -344,7 +342,7 @@ section {
     position: relative;
   }
 
-  .navbar>ul>li {
+  .navbar > ul > li {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
@@ -371,7 +369,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar>ul>li>a:before {
+  .navbar > ul > li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -385,7 +383,7 @@ section {
   }
 
   .navbar a:hover:before,
-  .navbar li:hover>a:before,
+  .navbar li:hover > a:before,
   .navbar .active:before {
     visibility: visible;
     width: 100%;
@@ -394,7 +392,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #000;
   }
 
@@ -431,11 +429,11 @@ section {
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: var(--color-primary);
   }
 
-  .navbar .dropdown:hover>ul {
+  .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -447,7 +445,7 @@ section {
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -460,13 +458,12 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
-
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -523,7 +520,7 @@ section {
   }
 
   .navbar a:hover,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #000;
   }
 
@@ -543,8 +540,8 @@ section {
     border: 1px solid #eee;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .navbar .dropdown > .dropdown-active,
+  .navbar .dropdown .dropdown > .dropdown-active {
     display: block;
   }
 
@@ -587,12 +584,12 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/stats-bg.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -671,12 +668,12 @@ section {
 }
 
 .menu .nav-link:hover {
-  color: #CDC9D1;
+  color: #cdc9d1;
 }
 
 .menu .nav-link.active {
-  color: #EFDDA9;
-  border-color: #EFDDA9;
+  color: #efdda9;
+  border-color: #efdda9;
   background-color: #4f4f5a00;
 }
 
@@ -690,9 +687,6 @@ section {
   color: #676775;
   margin-bottom: 0;
 }
-
-
-
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -829,7 +823,7 @@ section {
 }
 
 @media (min-width: 1200px) {
-  .events .swiper-slide-active+.swiper-slide {
+  .events .swiper-slide-active + .swiper-slide {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
     z-index: 1;
@@ -1049,7 +1043,7 @@ section {
   padding: 12px 15px;
 }
 
-.book-a-table .php-email-form button[type=submit] {
+.book-a-table .php-email-form button[type="submit"] {
   background: var(--color-primary);
   border: 0;
   padding: 14px 60px;
@@ -1058,7 +1052,7 @@ section {
   border-radius: 50px;
 }
 
-.book-a-table .php-email-form button[type=submit]:hover {
+.book-a-table .php-email-form button[type="submit"]:hover {
   background: #ec2727;
 }
 
@@ -1183,7 +1177,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1235,7 +1229,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--color-primary);
   border: 0;
   padding: 12px 40px;
@@ -1244,7 +1238,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #ec2727;
 }
 
@@ -1437,12 +1431,12 @@ section {
 .section2 {
   overflow: hidden;
   padding-bottom: 30px;
-  background: #CDC9D1;
+  background: #cdc9d1;
   border-radius: 120px;
 }
 
 .section2-bg {
-  background: #CDC9D1;
+  background: #cdc9d1;
 }
 
 .section2-header {
@@ -1460,31 +1454,29 @@ section {
   font-family: var(--font-default);
 }
 
-
-
 .section2-header p {
   margin: 0;
   font-size: 40px;
   font-weight: 400;
-  font-family: 'Julius Sans One'; 
+  font-family: "Julius Sans One";
   color: #fff;
 }
 
 .section2-header p span {
   color: #fff;
-  font-family: 'Fyodor'; 
+  font-family: "Fyodor";
 }
 @media (max-width: 575px) {
   .section2-header p {
     margin: 0;
     font-size: 20px;
-    font-family: 'Julius Sans One'; 
+    font-family: "Julius Sans One";
     color: #fff;
   }
   .section2-header p span {
     font-size: 20px;
     color: #fff;
-    font-family: 'Fyodor'; 
+    font-family: "Fyodor";
   }
 }
 
@@ -1516,11 +1508,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs2 ol li+li {
+.breadcrumbs2 ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs2 ol li+li::before {
+.breadcrumbs2 ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #676775;
@@ -1546,7 +1538,7 @@ section {
 }
 .contact2 {
   border-radius: 30px;
-  background: #CDC9D1;
+  background: #cdc9d1;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 1160px;
   height: 232px;
@@ -1558,7 +1550,7 @@ section {
   height: 149px;
   flex-shrink: 0;
   border-radius: 30px;
-  background: #EFDDA9;
+  background: #efdda9;
   box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
 }
 

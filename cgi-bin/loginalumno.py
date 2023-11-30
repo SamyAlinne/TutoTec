@@ -21,9 +21,9 @@ if metodo == "POST":
     result = cursor.fetchone()
     
     if result:
-        #print("<meta http-equiv='refresh' content='2;url=/tutotec/indexalumno.html' />")
-        print("Status: 302")
-        print(f"Location: http://localhost/tutotec/indexalumno.html")
+        print("<meta http-equiv='refresh' content='1;url=/tutotec/indexalumno.html' />")
+        #print("Status: 302")
+        #print(f"Location: http://localhost/tutotec/indexalumno.html")
         print()  # Imprimir una línea en blanco para finalizar las cabeceras
 
     else:
