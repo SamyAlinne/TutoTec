@@ -671,12 +671,12 @@ section {
 }
 
 .menu .nav-link:hover {
-  color: #EFDDA9;
+  color: #CDC9D1;
 }
 
 .menu .nav-link.active {
-  color: #CDC9D1;
-  border-color: #CDC9D1;
+  color: #EFDDA9;
+  border-color: #EFDDA9;
   background-color: #4f4f5a00;
 }
 
@@ -1543,4 +1543,53 @@ section {
   .breadcrumbs2 ol li {
     display: inline-block;
   }
+}
+.contact2 {
+  border-radius: 30px;
+  background: #CDC9D1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 1160px;
+  height: 232px;
+  flex-shrink: 0;
+}
+
+.contact3 {
+  width: 1160px;
+  height: 149px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #EFDDA9;
+  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.iconocalendario {
+  width: 116px;
+  height: 116px;
+  flex-shrink: 0;
+}
+
+.textoooooo {
+  display: flex;
+  width: 774px;
+  height: 89px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #344959;
+  text-align: center;
+  font-family: Anek Bangla;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 122.223%;
+}
+
+.textoooooo2 {
+  color: #344959;
+  text-align: center;
+  font-family: Anek Bangla;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
