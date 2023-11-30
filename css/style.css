@@ -251,7 +251,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #070101;
+  background-color: #344959;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -267,7 +267,7 @@ button {
 }
 
 .sidepanel a:hover {
-  color: #f8a60f;
+  color: #cf8d48;
 }
 
 .sidepanel .closebtn {
@@ -316,11 +316,11 @@ ul.conat_info li a {
 }
 
 ul.conat_info li button {
-     color: #fff;
-     display: inline-block;
-     font-size: 30px;
-   }
-   
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+}
+
 ul.conat_info li a:hover {
   color: #fff;
 }
@@ -1223,24 +1223,24 @@ ul.location_icon li a:hover {
   font-weight: 500;
 }
 @media (max-width: 780px) {
-     .btnDetalle {
-          margin-left: 5px;
-          width: auto;
-          height: 100%;
-          padding: 5px;
-          border-radius: 10px;
-          border: rgba(52, 73, 89, 1);
-          background-color: rgba(52, 73, 89, 1);
-          color: rgba(255, 255, 255, 1);
-          font-size: 12px;
-          max-width: 200;
-          align-content: center;
-          box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
-          font-family: Julius Sans One;
-          font-weight: 500;
-          text-align: center;
-        }
-   }
+  .btnDetalle {
+    margin-left: 5px;
+    width: auto;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: rgba(52, 73, 89, 1);
+    background-color: rgba(52, 73, 89, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    max-width: 200;
+    align-content: center;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    font-family: Julius Sans One;
+    font-weight: 500;
+    text-align: center;
+  }
+}
 .welcome-text {
   font-size: 18px;
   margin-top: 7%;
@@ -1255,5 +1255,40 @@ ul.location_icon li a:hover {
   }
 }
 .nav2 {
-     margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+/* Sidepanel Carnet */
+.sidepanel2 {
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #070101;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 55px;
+  transition: width 1s ease; /* Agregar una transición */
+}
+
+.sidepanel2 a {
+  padding: 0px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel2 a:hover {
+  color: #344959;
+}
+
+.sidepanel2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
 }

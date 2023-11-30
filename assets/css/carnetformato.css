@@ -7,7 +7,7 @@
 /* Main Con tamaño del carnet */
 main {
   width: 560px;
-  height: 980px;
+  height: 100%;
   background: #fff;
 }
 
@@ -47,7 +47,7 @@ main {
 /* Foto del carnet */
 .foto {
   width: auto;
-  height: 330px;
+  height: 320px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -88,7 +88,7 @@ main {
   color: #cf8d48;
   text-align: center;
   font-family: Julius Sans One;
-  font-size: 50px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -129,14 +129,15 @@ main {
 }
 
 /* Footer del carnet */
-.footer {
+.footerC {
   width: auto;
-  height: 200px;
+  height: 170px;
   padding-top: 10px;
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
   text-align: center; 
+  background-color: #fff;
 }
 .linea {
   /* Layout */
@@ -149,7 +150,7 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-.footer img {
+.footerC img {
   width: 74px;
   height: 72px;
   flex-shrink: 0;

@@ -14,26 +14,30 @@ if metodo == "POST":
     c = datos.getvalue("emailAlumno")
     p = datos.getvalue("passwordAlumno")
 
-    con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd')
-    cursor = con.cursor()
-    sql = "SELECT * FROM alumnos WHERE no_control='{}' AND password='{}'".format(c, p)
-    cursor.execute(sql)
-    result = cursor.fetchone()
-    
-    if result:
-        print("<meta http-equiv='refresh' content='1;url=/tutotec/indexalumno.html' />")
-        #print("Status: 302")
-        #print(f"Location: http://localhost/tutotec/indexalumno.html")
-        print()  # Imprimir una línea en blanco para finalizar las cabeceras
+    try:
+        con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd')
+        cursor = con.cursor()
+        sql = "SELECT * FROM alumnos WHERE no_control='{}' AND password='{}'".format(c, p)
+        cursor.execute(sql)
+        result = cursor.fetchone()
 
-    else:
-        
-        print("<h4>Inicio de sesion incorrecto. Vuelva a intentarlo</h4>")
-    
-    con.commit()
-    con.close()
+        if result:
+            print("<meta http-equiv='refresh' content='0;url=/tutotec/indexalumno.html' />")
+            print()  # Imprimir una línea en blanco para finalizar las cabeceras
+            print("<script>alert('Inicio de sesión correcto. Redirigiendo...');</script>")
+        else:
+            print("<script>alert('Inicio de sesión incorrecto. Vuelva a intentarlo');</script>")
+            print("<meta http-equiv='refresh' content='0;url=/tutotec/iniciosesion.html' />")
+
+        con.commit()
+        con.close()
+
+    except mysql.connector.Error as err:
+        print("Error:", err)
+
 else:
     print("<h4>Método no permitido</h4>")
+
 
 
 

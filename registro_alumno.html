@@ -33,7 +33,7 @@
   <main id="main" style="background-color: #FFF;">
     <div class="col-md-4 col-sm-4">
       <div class="logo">
-         <a href="index.html"><img src="images/TutoLogo.png" class="imagenLogo" alt="#" ></a>
+         <a href="iniciosesion.html"><img src="images/TutoLogo.png" class="imagenLogo" alt="#" ></a>
       </div>
    </div><br>
 
@@ -54,47 +54,46 @@
           <p>Registro <span>Alumno</span></p>
         </div>
           <div class="contenedorBlanco">
-            <form action="">
+            <form action="/TutoTec/cgi-bin/agregar_alumno.py" method="post" role="form" id="registrationForm">
             <table class="tableRegistro">
               <tbody>
               <tr>
                 <td><p>No. Control:</p></td>
-                <td><input type="text" id="txtNoControl"></td>
-                <td><button class="btnSubir">Subir Foto<i class="bi bi-person-bounding-box" style="margin-left: 15px;"></i></button></td>
+                <td colspan="2"><input type="text" id="txtNoControl" name="txtNoControl" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Nombre(s):</p></td>
-                <td colspan="2"><input type="text" id="txtNombreAlumno" required></td>
+                <td colspan="2"><input type="text" id="txtNombreAlumno" name="txtNombreAlumno" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Apellido Paterno:</p></td>
-                <td colspan="2"><input type="text" id="txtAPatAlumno" required></td>
+                <td colspan="2"><input type="text" id="txtAPatAlumno" name="txtAPatAlumno" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Apellido Materno:</p></td>
-                <td colspan="2"><input type="text" id="txtAMatAlumno" required></td>
+                <td colspan="2"><input type="text" id="txtAMatAlumno" name="txtAMatAlumno" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Carrera:</p></td>
-                <td colspan="2"><input type="text" id="txtCarrera" required></td>
+                <td colspan="2"><input type="text" id="txtCarrera" name="txtCarrera" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Grupo:</p></td>
-                <td colspan="2"><input type="text" id="txtGrupoAlumno" required></td>
+                <td colspan="2"><input type="text" id="txtGrupoAlumno" name="txtGrupoAlumno" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Correo:</p></td>
-                <td colspan="2"><input type="email" id="emailAlumno" required></td>
+                <td colspan="2"><input type="email" id="emailAlumno" name="emailAlumno" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Contraseña:</p></td>
-                <td colspan="2"><input type="password" id="passAlumno" required></td>
+                <td colspan="2"><input type="password" id="passAlumno" name="passAlumno" required></td>
               </tr>
               <tr>
                 <td><p>Confirmar contraseña:</p></td>
                 <td colspan="2"><input type="password" id="passConfiAlumno" required></td>
               </tr>
-              <tr>
+              <tr style="margin-top: 10px;">
                 <td colspan="3"><button type="submit" class="botonRegistrarme" >Registrarme</button></td>
               </tr>
             </tbody>
@@ -129,6 +128,34 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Función para verificar si las contraseñas coinciden
+    function checkPasswordMatch() {
+        var password = document.getElementById("passAlumno").value;
+        var confirmPassword = document.getElementById("passConfiAlumno").value;
+
+        if (password !== confirmPassword) {
+            alert("Las contraseñas no coinciden. Por favor, ingresa la misma contraseña en ambos campos.");
+            return false;
+        }
+        return true;
+    }
+
+    // Agregar evento al formulario para verificar las contraseñas antes de enviar
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        if (!checkPasswordMatch()) {
+            event.preventDefault(); // Evita que se envíe el formulario si las contraseñas no coinciden
+        }
+    });
+</script>
+<!-- Mayúsculas -->
+<script type="text/javascript">
+  function upperCase() {
+     var x=document.getElementById("fname").value
+     document.getElementById("fname").value=x.toUpperCase()
+  }
+  </script>
 
 </body>
 

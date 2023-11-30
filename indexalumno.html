@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/carnetformato.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- fevicon -->
@@ -47,16 +48,53 @@
       <div class="loader"><img src="images/loading.gif" alt="#" /></div>
     </div>
     <!-- end loader -->
+    <!-- menu -->
     <div id="mySidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="index.html">Inicio</a>
-      <a href="iniciosesion.html">Iniciar Sesión</a>
-      <a href="registro_alumno.html">Registrarse</a>
+      <a href="indexalumno.html">Inicio</a>
+      <a href="index.html">Cerrar Sesión</a>
     </div>
-    <div id="mySidepanel2" class="sidepanel">
+    <div id="mySidepanel2" class="sidepanel2">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a>
-      <div id="contenidoExterno" class="contenido-externo"></div>
-    </div>
+
+      <!-- CARNET -->
+      <main>
+        <div class="headerC" style="background-color: #344959;">
+            <p>TUTOTEC</p><i class="bi bi-pencil-square"></i><a href="#editarcarnet"><img src="icon/editar2.png" alt="editar"></a>
+        </div><!--End of header-->
+        <div class="foto">
+            <img src="images/circulo_fondo_alumno.png" alt="fondo" class="fotoFondo">
+            <img src="images/yoxd.jpg" alt="Alumno" class="fotoCirculo" id="fotoAlumno">
+        </div><!--End of foto-->
+        <div class="nombre">
+            <p id="nombreCompT" style="color: #344959;">Nombre Completo</p>
+        </div><!--End of nombre-->
+        <div class="datos">
+            <table style="width: 100%;">
+                <tr>
+                    <td><p>No.Control:</p></td>
+                    <td><span id="noConAlumno">S20030134</span></td>
+                </tr>
+                <tr>
+                    <td><p>Carrera:</p></td>
+                    <td><span id="carrera">Ingeniería en Sistemas</span></td>
+                </tr>
+                <tr>
+                    <td><p>Grupo:</p></td>
+                    <td><span id="grupoAlumno">077CA</span></td>
+                </tr>
+                <tr>
+                    <td><p>Tutor:</p></td>
+                    <td><span id="nomTutor">Juan Carlos Madrigal</span></td>
+                </tr>
+            </table>            
+        </div><!--End of datos-->
+        <div class="footerC">
+            <div class="linea"></div><br>
+            <img src="images/Logo-prototipo2.png" alt="jaguarcito">
+        </div><!--End of datos-->
+    </main>
+    </div><!-- end of CARNET -->
     
 <!-- header -->
 <header>
@@ -65,7 +103,7 @@
       <div class="row" >
         <div class="col-md-4 col-sm-4">
           <div class="logo">
-            <a href="index.html">
+            <a href="indexalumno.html">
               <img src="images/TutoLogo.png" alt="#" class="logoT" />
             </a>
           </div>
@@ -230,18 +268,8 @@
          }
 
          function openNav2() {
-          document.getElementById("mySidepanel").style.width = "auto";
-          // Obtener el contenedor para el contenido externo
-          const contenedorExterno = document.getElementById("contenidoExterno");
-          // Realizar la petición para obtener el contenido externo
-          fetch('TutoTec/carnet_alumno.html')
-            .then(response => response.text())
-            .then(data => {
-              // Insertar el contenido obtenido dentro del contenedor
-              contenedorExterno.innerHTML = data;
-            });
+          document.getElementById("mySidepanel2").style.width = "auto";
           }
-
           function closeNav2() {
            document.getElementById("mySidepanel2").style.width = "0";
          }
