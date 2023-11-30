@@ -33,7 +33,7 @@
   <main id="main" style="background-color: #FFF;">
     <div class="col-md-4 col-sm-4">
       <div class="logo">
-         <a href="index.html"><img src="images/TutoLogo.png" class="imagenLogo" alt="#" ></a>
+         <a href="iniciosesion.html"><img src="images/TutoLogo.png" class="imagenLogo" alt="#" ></a>
       </div>
    </div><br>
 
@@ -54,44 +54,43 @@
           <p>Registro <span>Tutor</span></p>
         </div>
           <div class="contenedorBlanco">
-            <form action="">
+            <form action="/TutoTec/cgi-bin/agregar_tutor.py" method="post" role="form" id="registrationForm2">
             <table class="tableRegistro2">
               <tbody>
               <tr>
                 <td><p>Correo Electrónico:</p></td>
-                <td><input type="email" id="emailTutor"></td>
-                <td><button class="btnSubirT">Subir Foto<i class="bi bi-person-bounding-box" style="margin-left: 15px;"></i></button></td>
+                <td colspan="2"><input type="email" id="emailTutor" name="emailTutor" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Nombre(s):</p></td>
-                <td colspan="2"><input type="text" id="txtNombreTutor" required></td>
+                <td colspan="2"><input type="text" id="txtNombreTutor" name="txtNombreTutor" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Apellido Paterno:</p></td>
-                <td colspan="2"><input type="text" id="txtAPatTutor" required></td>
+                <td colspan="2"><input type="text" id="txtAPatTutor" name="txtAPatTutor" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Apellido Materno:</p></td>
-                <td colspan="2"><input type="text" id="txtAMatTutor" required></td>
+                <td colspan="2"><input type="text" id="txtAMatTutor" name="txtAMatTutor" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Academia:</p></td>
-                <td colspan="2"><input type="text" id="txtAcademia" required></td>
+                <td colspan="2"><input type="text" id="txtAcademia" name="txtAcademia" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Grupo:</p></td>
-                <td colspan="2"><input type="text" id="txtGrupoTutor" required></td>
+                <td colspan="2"><input type="text" id="txtGrupoTutor" name="txtGrupoTutor" required onblur="upperCase()"></td>
               </tr>
               <tr>
                 <td><p>Contraseña:</p></td>
-                <td colspan="2"><input type="password" id="passTutor" required></td>
+                <td colspan="2"><input type="password" id="passTutor" name="passTutor" required></td>
               </tr>
               <tr>
                 <td><p>Confirmar contraseña:</p></td>
                 <td colspan="2"><input type="password" id="passConfiTutor" required></td>
               </tr>
               <tr>
-                <td colspan="3"><button type="submit" class="botonRegistrarme" >Registrarme</button></td>
+                <td colspan="3"><button type="submit" class="botonRegistrarme" style="margin-top: 20px;">Registrarme</button></td>
               </tr>
             </tbody>
             </table>
@@ -125,7 +124,33 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    // Función para verificar si las contraseñas coinciden
+    function checkPasswordMatch() {
+        var password = document.getElementById("passTutor").value;
+        var confirmPassword = document.getElementById("passConfiTutor").value;
 
+        if (password !== confirmPassword) {
+            alert("Las contraseñas no coinciden. Por favor, ingresa la misma contraseña en ambos campos.");
+            return false;
+        }
+        return true;
+    }
+
+    // Agregar evento al formulario para verificar las contraseñas antes de enviar
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        if (!checkPasswordMatch()) {
+            event.preventDefault(); // Evita que se envíe el formulario si las contraseñas no coinciden
+        }
+    });
+</script>
+<!-- Mayúsculas -->
+<script type="text/javascript">
+  function upperCase() {
+     var x=document.getElementById("fname").value
+     document.getElementById("fname").value=x.toUpperCase()
+  }
+  </script>
 </body>
 
 </html>

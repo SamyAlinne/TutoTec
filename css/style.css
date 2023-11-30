@@ -356,6 +356,20 @@ ul.conat_info li a:hover {
     background-size: contain; /* o cambia el tamaño de la imagen según necesites */
   }
 }
+.banner_main2 {
+  background: url(../images/banner1.png);
+  padding: 300px 0px 0px 0px;
+  background-size: auto 78%;
+  background-repeat: no-repeat;
+  min-height: 810px;
+  background-position: right top;
+}
+
+@media screen and (max-width: 768px) {
+  .banner_main2 {
+    background-size: contain; /* o cambia el tamaño de la imagen según necesites */
+  }
+}
 
 .text-bg {
   margin-top: 70px;
@@ -1291,4 +1305,132 @@ ul.location_icon li a:hover {
   top: 0;
   right: 25px;
   font-size: 36px;
+}
+
+/* Inicio Tutor */
+.contenedorNaranja {
+  /* Layout */
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  /* Style */
+  border-radius: 30px;
+  background: #EFDDA9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.txtActividad2 {
+  color: #CF8D48;
+  text-align: center;
+  font-family: Julius Sans One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: auto; /* 44px */
+}
+
+.contenedorNaranja b {
+  font-family: Fyodor;
+  color: #a27644;
+}
+.txt2 {
+  color: #A27644;
+  text-align: center;
+  font-family: Julius Sans One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: auto; /* 44px */
+}
+/* Estilos para el contenedor superior del título */
+.titulo-container2 {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.btnDetalle2 {
+  margin-left: 15px;
+  width: auto;
+  height: 53px;
+  padding: 15px;
+  border-radius: 10px;
+  border: #fff;
+  background-color: #fff;
+  color: #CF8D48;
+  font-size: 16px;
+  max-width: 600;
+  align-content: center;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  font-family: Julius Sans One;
+  font-weight: 1000;
+}
+@media (max-width: 780px) {
+  .btnDetalle2 {
+    margin-left: 5px;
+    width: auto;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: #fff;
+    background-color: #fff;
+    color: #CF8D48;
+    font-size: 12px;
+    max-width: 200;
+    align-content: center;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    font-family: Julius Sans One;
+    font-weight: 1000;
+    text-align: center;
+  }
+}
+.btnDetalle3 {
+  margin-left: 15px;
+  width: auto;
+  height: 53px;
+  padding: 15px;
+  border-radius: 10px;
+  border: #CF8D48;
+  background-color: #CF8D48;
+  color: #fff;
+  font-size: 16px;
+  max-width: 600;
+  align-content: center;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  font-family: Julius Sans One;
+  font-weight: 1000;
+}
+@media (max-width: 780px) {
+  .btnDetalle3 {
+    margin-left: 5px;
+    width: auto;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: #CF8D48;
+    background-color: #CF8D48;
+    color: #fff;
+    font-size: 12px;
+    max-width: 200;
+    align-content: center;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    font-family: Julius Sans One;
+    font-weight: 1000;
+    text-align: center;
+  }
+}
+
+.alumnos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
