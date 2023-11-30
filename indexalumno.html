@@ -274,6 +274,24 @@
            document.getElementById("mySidepanel2").style.width = "0";
          }
       </script>
+      <script>
+        // Función para obtener parámetros GET de la URL
+        function getParam(name) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(name);
+        }
+      
+        // Obtener los parámetros de la URL
+        const nombre = getParam('nombre');
+        const apaterno = getParam('apaterno');
+        const amaterno = getParam('amaterno');
+      
+        // Mostrar el nombre y apellidos en el span correspondiente
+        const spanNombre = document.getElementById('nombreAlumno');
+        if (spanNombre) {
+          spanNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
+        }
+      </script>
    </body>
 </html>
 

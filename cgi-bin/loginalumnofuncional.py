@@ -3,7 +3,6 @@ import mysql.connector
 import os
 import cgi
 import cgitb
-from urllib.parse import urlencode
 cgitb.enable()
 print("Content-type: text/html")
 print()
@@ -23,17 +22,7 @@ if metodo == "POST":
         result = cursor.fetchone()
 
         if result:
-            nombre = result[1]  
-            apellido_paterno = result[2] 
-            apellido_materno = result[3] 
-
-             # Codificar los valores con urlencode para manejar caracteres especiales
-            nombre_encoded = urlencode({'nombre': nombre})
-            apellido_paterno_encoded = urlencode({'apaterno': apellido_paterno})
-            apellido_materno_encoded = urlencode({'amaterno': apellido_materno})
-
-            print("<meta http-equiv='refresh' content='0;url=/tutotec/indexalumno.html?{}&{}&{}' />".format(nombre_encoded, apellido_paterno_encoded, apellido_materno_encoded))
-
+            print("<meta http-equiv='refresh' content='0;url=/tutotec/indexalumno.html' />")
             print()  # Imprimir una línea en blanco para finalizar las cabeceras
             print("<script>alert('Inicio de sesión correcto. Redirigiendo...');</script>")
         else:
