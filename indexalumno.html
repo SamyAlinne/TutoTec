@@ -282,9 +282,10 @@
         }
       
         // Obtener los parámetros de la URL
-        const nombre = getParam('nombre');
-        const apaterno = getParam('apaterno');
-        const amaterno = getParam('amaterno');
+        const urlParams = new URLSearchParams(window.location.search);
+        const nombre = urlParams.get('nombre');
+        const apaterno = urlParams.get('apaterno');
+        const amaterno = urlParams.get('amaterno');
       
         // Mostrar el nombre y apellidos en el span correspondiente
         const spanNombre = document.getElementById('nombreAlumno');
@@ -295,11 +296,6 @@
         const pNombre = document.getElementById('nombreCompT');
         if (pNombre) {
          pNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
-        }
-        // Mostrar el no. control en el span correspondiente
-        const NoControl = document.getElementById('noConAlumno');
-        if (NoControl) {
-          NoControl.textContent = `${nocontrol}`;
         }
       </script>
    </body>

@@ -63,7 +63,7 @@
         <div class="headerC">
           <p>TUTOTEC</p>
           <i class="bi bi-pencil-square"></i
-          ><a href="#editarcarnet"
+          ><a href="actualizar_tutor.html"
             ><img src="icon/editar.png" alt="editar"
           /></a>
         </div>
@@ -230,11 +230,10 @@
                     <th>Carrera</th>
                     <th>Grupo</th>
                     <th>Correo</th>
-                    <th>Contraseña</th>
-                    <th>Acciones</th>
                   </tr>
                 </table>
               </div>
+              <a href="eliminar_alumno.html"><button class="btnDetalle3">Eliminar Alumno</button></a>
             </div>
             <!--end of contenedorNaranja -->
           </div>
@@ -303,64 +302,45 @@
       }
       nombreCompT;
 
-      // Mostrar el nombre y apellidos en el p correspondiente
+      // Mostrar el nombre y apellidos en el span correspondiente
       const pNombre = document.getElementById("nombreCompT");
       if (pNombre) {
         pNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
       }
     </script>
 
-   <!-- ... (otros elementos HTML) ... -->
+    <script>
+      // Función para obtener y mostrar los datos de los alumnos
+      function mostrarDatosAlumnos() {
+        // Realizar una solicitud al script Python
+        fetch("/tutotec/cgi-bin/consultar_alumnos.py")
+          .then((response) => response.json())
+          .then((data) => {
+            // Obtener la tabla
+            const tabla = document.getElementById("tabla-alumnos");
 
-<script>
-   // Función para obtener y mostrar los datos de los alumnos
-   function mostrarDatosAlumnos() {
-     // Realizar una solicitud al script Python
-     fetch("/tutotec/cgi-bin/consultar_alumnos.py")
-       .then((response) => response.json())
-       .then((data) => {
-         const tabla = document.getElementById("tabla-alumnos");
- 
-         // Limpiar la tabla (excepto los encabezados)
-         while (tabla.rows.length > 1) {
-           tabla.deleteRow(1);
-         }
- 
-         data.forEach((row) => {
-           const newRow = tabla.insertRow(-1);
-           row.forEach((cell, index) => {
-             const newCell = newRow.insertCell(-1);
-             newCell.textContent = cell;
- 
-             if (index === row.length - 1) {
-               const actionCell = newRow.insertCell();
-               const deleteButton = document.createElement("button");
-               deleteButton.textContent = "Eliminar";
-               deleteButton.addEventListener("click", () => eliminarAlumno(cell)); // Llamar a la función de eliminación con el no_control
-               actionCell.appendChild(deleteButton);
-             }
-           });
-         });
-       })
-       .catch((error) => console.error("Hubo un error:", error));
-   }
- 
-   // Función para eliminar un alumno
-   function eliminarAlumno(noControl) {
-     fetch(`/tutotec/cgi-bin/eliminar_alumno.py?no_control=${noControl}`)
-       .then((response) => {
-         if (response.ok) {
-           mostrarDatosAlumnos(); // Actualizar la tabla después de eliminar el alumno
-         } else {
-           console.error("Error al eliminar el alumno.");
-         }
-       })
-       .catch((error) => console.error("Hubo un error:", error));
-   }
- 
-   // Llamar a la función para mostrar los datos al cargar la página
-   window.onload = mostrarDatosAlumnos;
- </script>
- 
+            // Limpiar la tabla (excepto los encabezados)
+            while (tabla.rows.length > 1) {
+              tabla.deleteRow(1);
+            }
+
+            // Insertar los datos en la tabla
+            data.forEach((row) => {
+              const newRow = tabla.insertRow(-1);
+              row.forEach((cell, index) => {
+                if (index !== 7) {
+                  // Asegúrate de que el índice de la contraseña sea el correcto
+                  const newCell = newRow.insertCell(-1);
+                  newCell.textContent = cell;
+                }
+              });
+            });
+          })
+          .catch((error) => console.error("Hubo un error:", error));
+      }
+
+      // Llamar a la función para mostrar los datos al cargar la página
+      window.onload = mostrarDatosAlumnos;
+    </script>
   </body>
 </html>

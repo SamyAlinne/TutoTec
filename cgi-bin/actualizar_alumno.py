@@ -34,9 +34,19 @@ if metodo == "POST":
 
             con.commit()
             con.close()
+            
+            # Datos actualizados para enviar a través de la URL
+            nombre_actualizado = "NuevoNombre"
+            apellido_paterno_actualizado = "NuevoApellidoPaterno"
+            apellido_materno_actualizado = "NuevoApellidoMaterno"
 
-            print("<meta http-equiv='refresh' content='0;url=/tutotec/indexalumno.html' />")
+             # Crear la URL con los datos actualizados como parámetros
+            url_redireccion = f"/tutotec/indexalumno.html?nombre={nombre_actualizado}&apaterno={apellido_paterno_actualizado}&amaterno={apellido_materno_actualizado}"
+            # Redirigir a la URL con los datos actualizados
+            print(f"<meta http-equiv='refresh' content='0;url={url_redireccion}' />")
             print("<script>alert('Los datos fueron modificados satisfactoriamente');</script>")
+
+           
 
         except mysql.connector.Error as err:
             print("<script>alert('Hubo un error al modificar los datos del alumno. Intente nuevamente.');</script>")

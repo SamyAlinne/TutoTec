@@ -23,7 +23,6 @@ if metodo == "POST":
         result = cursor.fetchone()
 
         if result:
-            no_control = result [0]
             nombre = result[1]  
             apellido_paterno = result[2] 
             apellido_materno = result[3] 
@@ -33,8 +32,8 @@ if metodo == "POST":
             apellido_paterno_encoded = urlencode({'apaterno': apellido_paterno})
             apellido_materno_encoded = urlencode({'amaterno': apellido_materno})
 
-            print("<meta http-equiv='refresh' content='0;url=/tutotec/indexalumno.html?{}&{}&{}&{}' />".format(no_control, nombre_encoded, apellido_paterno_encoded, apellido_materno_encoded))
-            
+            print("<meta http-equiv='refresh' content='0;url=/tutotec/indexalumno.html?{}&{}&{}' />".format(nombre_encoded, apellido_paterno_encoded, apellido_materno_encoded))
+
             print()  # Imprimir una línea en blanco para finalizar las cabeceras
             print("<script>alert('Inicio de sesión correcto. Redirigiendo...');</script>")
         else:
