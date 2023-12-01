@@ -11,7 +11,7 @@ metodo = os.environ["REQUEST_METHOD"]
 
 if metodo == "POST":
     datos = cgi.FieldStorage()
-    nc = datos.getvalue("no_control")
+    nc = datos.getvalue("txtNoControl")
     con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd')
     cursor = con.cursor()
     sql = f"DELETE from alumnos WHERE no_control='{nc}'"
