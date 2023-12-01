@@ -60,7 +60,7 @@
       <!-- CARNET -->
       <main>
         <div class="headerC" style="background-color: #344959;">
-            <p>TUTOTEC</p><i class="bi bi-pencil-square"></i><a href="#editarcarnet"><img src="icon/editar2.png" alt="editar"></a>
+            <p>TUTOTEC</p><i class="bi bi-pencil-square"></i><a href="actualizar_alumno.html"><img src="icon/editar2.png" alt="editar"></a>
         </div><!--End of header-->
         <div class="foto">
             <img src="images/circulo_fondo_alumno.png" alt="fondo" class="fotoFondo">
@@ -103,9 +103,9 @@
       <div class="row" >
         <div class="col-md-4 col-sm-4">
           <div class="logo">
-            <a href="indexalumno.html">
+            
               <img src="images/TutoLogo.png" alt="#" class="logoT" />
-            </a>
+
           </div>
         </div>
         <div class="col-md-4 col-sm-4"> 
@@ -290,6 +290,16 @@
         const spanNombre = document.getElementById('nombreAlumno');
         if (spanNombre) {
           spanNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
+        }
+        // Mostrar el nombre y apellidos en el span correspondiente
+        const pNombre = document.getElementById('nombreCompT');
+        if (pNombre) {
+         pNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
+        }
+        // Mostrar el no. control en el span correspondiente
+        const NoControl = document.getElementById('noConAlumno');
+        if (NoControl) {
+          NoControl.textContent = `${nocontrol}`;
         }
       </script>
    </body>

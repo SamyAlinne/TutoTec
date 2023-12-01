@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2023 a las 00:58:11
+-- Tiempo de generación: 01-12-2023 a las 01:35:23
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -28,12 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `alumnos` (
-  `no_control` varchar(30) NOT NULL COMMENT 'Número de control asignado por la institución que incluye números y letras.',
+  `no_control` varchar(30) NOT NULL COMMENT 'Número de control del estudiante.',
   `nombre` varchar(45) NOT NULL COMMENT 'Nombre del usuario (alumno).',
   `apellido_pa` varchar(45) NOT NULL COMMENT 'Apellido paterno del usuario.',
   `apellido_ma` varchar(45) NOT NULL COMMENT 'Apellido materno del usuario.',
-  `carrera` varchar(30) NOT NULL COMMENT 'Nombre de la carrera a la que pertenece el usuario.',
+  `carrera` varchar(100) NOT NULL COMMENT 'Carrera a la que pertenece el alumno',
   `grupo` varchar(30) NOT NULL COMMENT 'Grupo al que pertenece el usuario.',
+  `correo` varchar(100) NOT NULL COMMENT 'Correo institucional del alumno',
   `password` varchar(30) NOT NULL COMMENT 'Contraseña la cual puede incluir números y letras.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
@@ -41,8 +42,10 @@ CREATE TABLE `alumnos` (
 -- Volcado de datos para la tabla `alumnos`
 --
 
-INSERT INTO `alumnos` (`no_control`, `nombre`, `apellido_pa`, `apellido_ma`, `carrera`, `grupo`, `password`) VALUES
-('S20030134', 'Alinne Samantha', 'Hernández', 'Pérez', 'Sistemas', '077CA', '123456');
+INSERT INTO `alumnos` (`no_control`, `nombre`, `apellido_pa`, `apellido_ma`, `carrera`, `grupo`, `correo`, `password`) VALUES
+('S20030134', 'Alinne Samantha', 'Hernández', 'Pérez', 'Sistemas', '077CA', 'admin@gmail.com', '123456'),
+('S20030135', 'Faker', 'Lee', 'Sang-Hyeok', 'INGENIERÍA EN SISTEMAS COMPUTA', '077CA', 'faker@elmejor.com', 'faker'),
+('s20030136', 'hola', 'pap', 'mam', 'siuu', '077ca', 'hola@admin.com', '123456');
 
 -- --------------------------------------------------------
 
@@ -74,6 +77,15 @@ CREATE TABLE `tutores` (
   `grupo` varchar(30) NOT NULL COMMENT 'Grupo al que se encuentra asignado el usuario para impartir las tutorías.',
   `password` varchar(30) NOT NULL COMMENT 'Contraseña la cual puede incluir números y letras.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `tutores`
+--
+
+INSERT INTO `tutores` (`correo`, `nombre`, `apellido_pa`, `apellido_ma`, `academia`, `grupo`, `password`) VALUES
+('admin@gmail.com', 'Juan Carlos', 'Madrigal', 'Hernandez', 'Sistemas', '077CA', '123'),
+('hola@gmail.com', 'Cesar', 'mora', 'hernández', 'ingeniería en sistemas', '077ca', '123'),
+('hola2@gmail.com', 'Esmeralda', 'delgado', 'perez', 'sistemas', '077ca', '456');
 
 --
 -- Índices para tablas volcadas

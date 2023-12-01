@@ -1,18 +1,21 @@
 #!C:/Python311/python.exe
 import mysql.connector
-import os
-import cgi
-import cgitb
-cgitb.enable()
-print("Content-type: text/html")
-print()
-print("<h1>Consulta Usuarios: Alumnos</h1>")
-print("<hr>")
+import json
 
-con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd')
+# Establecer la conexión a la base de datos
+con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd', charset='utf8')
 cursor = con.cursor()
+
+# Realizar la consulta
 sql = "SELECT * FROM alumnos"
 cursor.execute(sql)
-for (no_control, nombre, apellido_pa, apellido_ma, carrera, grupo, correo, password) in cursor:
-    print("{},{},{},{},{},{},{}".format(no_control,nombre,apellido_pa,apellido_ma,carrera,grupo,correo, password))
-    print("<hr>")
+
+# Obtener los resultados de la consulta
+resultados = cursor.fetchall()
+
+# Convertir los resultados a formato JSON para enviarlos a la página HTML
+resultados_json = json.dumps(resultados)
+print("Content-type: application/json")
+print()
+print(resultados_json)
+

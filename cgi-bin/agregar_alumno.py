@@ -28,7 +28,7 @@ if metodo == "POST":
     else:
 
         try:
-            con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd')
+            con = mysql.connector.connect(user='root', password='', host='127.0.0.1', database='tutotecbd', charset='utf8')
             cursor = con.cursor()
 
             # Ejemplo de consulta parametrizada para evitar inyección SQL

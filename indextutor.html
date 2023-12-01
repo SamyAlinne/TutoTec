@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="assets/css/carnetformato.css">
+    <link rel="stylesheet" href="assets/css/carnetformato.css" />
+    <link rel="stylesheet" href="assets/css/tabla.css" />
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- fevicon -->
@@ -42,7 +43,7 @@
     ><![endif]-->
   </head>
   <!-- body -->
-  <body class="main-layout" style="  background-color: #fff;">
+  <body class="main-layout" style="background-color: #fff">
     <!-- loader  -->
     <div class="loader_bg">
       <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -59,118 +60,188 @@
 
       <!-- CARNET -->
       <main>
-         <div class="headerC">
-             <p>TUTOTEC</p><i class="bi bi-pencil-square"></i><a href="#editarcarnet"><img src="icon/editar.png" alt="editar"></a>
-         </div><!--End of header-->
-         <div class="foto">
-             <img src="images/circulo_fondo.png" alt="fondo" class="fotoFondo">
-             <img src="images/tutorCuadrado.png" alt="Tutor" class="fotoCirculo" id="fotoTutor">
-         </div><!--End of foto-->
-         <div class="nombre">
-             <p id="nombreCompT">Nombre Completo</p>
-         </div><!--End of nombre-->
-         <div class="datos">
-             <table style="width: 100%;">
-                 <tr>
-                     <td><p>Correo:</p></td>
-                     <td><span id="correoTutor">example@gmail.com</span></td>
-                 </tr>
-                 <tr>
-                     <td><p>Academia:</p></td>
-                     <td><span id="academia">Ingeniería en Sistemas</span></td>
-                 </tr>
-                 <tr>
-                     <td><p>Grupo:</p></td>
-                     <td><span id="grupoTutor">077CA</span></td>
-                 </tr>
-             </table>            
-         </div><!--End of datos-->
-         <div class="footerC">
-             <div class="linea"></div><br>
-             <img src="images/Logo-prototipo2.png" alt="jaguarcito">
-         </div><!--End of datos-->
-     </main>
-    </div><!-- end of CARNET -->
-    
-<!-- header -->
-<header>
-  <div class="header">
-    <div class="container-fluid">
-      <div class="row" >
-        <div class="col-md-4 col-sm-4">
-          <div class="logo">
-            <a href="indextutor.html">
-              <img src="images/TutoLogo.png" alt="#" class="logoT" />
-            </a>
-          </div>
+        <div class="headerC">
+          <p>TUTOTEC</p>
+          <i class="bi bi-pencil-square"></i
+          ><a href="#editarcarnet"
+            ><img src="icon/editar.png" alt="editar"
+          /></a>
         </div>
-        <div class="col-md-4 col-sm-4"> 
-          <div class="text-center">
-            <p class="welcome-text">Bienvenid@: <span id="nombreTutor">usuario</span></p>
-          </div>
+        <!--End of header-->
+        <div class="foto">
+          <img src="images/circulo_fondo.png" alt="fondo" class="fotoFondo" />
+          <img
+            src="images/tutorCuadrado.png"
+            alt="Tutor"
+            class="fotoCirculo"
+            id="fotoTutor"
+          />
         </div>
-        <div class="col-md-4 col-sm-4"> 
-          <div class="right_bottun">
-            <ul class="conat_info d_none ">
-              <li>
-                <button class="openbtn" onclick="openNav2()">
-                  <i class="fa fa-user" aria-hidden="true"></i>
+        <!--End of foto-->
+        <div class="nombre">
+          <p id="nombreCompT">Nombre Completo</p>
+        </div>
+        <!--End of nombre-->
+        <div class="datos">
+          <table style="width: 100%">
+            <tr>
+              <td><p>Correo:</p></td>
+              <td><span id="correoTutor">example@gmail.com</span></td>
+            </tr>
+            <tr>
+              <td><p>Academia:</p></td>
+              <td><span id="academia">Ingeniería en Sistemas</span></td>
+            </tr>
+            <tr>
+              <td><p>Grupo:</p></td>
+              <td><span id="grupoTutor">077CA</span></td>
+            </tr>
+          </table>
+        </div>
+        <!--End of datos-->
+        <div class="footerC">
+          <div class="linea"></div>
+          <br />
+          <img src="images/Logo-prototipo2.png" alt="jaguarcito" />
+        </div>
+        <!--End of datos-->
+      </main>
+    </div>
+    <!-- end of CARNET -->
+
+    <!-- header -->
+    <header>
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="logo">
+                <a href="indextutor.html">
+                  <img src="images/TutoLogo.png" alt="#" class="logoT" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="text-center">
+                <p class="welcome-text">
+                  Bienvenid@: <span id="nombreTutor">usuario</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="right_bottun">
+                <ul class="conat_info d_none">
+                  <li>
+                    <button class="openbtn" onclick="openNav2()">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </button>
+                  </li>
+                </ul>
+                <button class="openbtn" onclick="openNav()">
+                  <img src="images/menu_icon.png" alt="#" />
                 </button>
-              </li>
-            </ul>
-            <button class="openbtn" onclick="openNav()">
-              <img src="images/menu_icon.png" alt="#" />
-            </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
-<!-- end header -->
+    </header>
+    <!-- end header -->
 
     <!-- banner -->
-      <section class="banner_main2" style="padding: 170px 0 0 0;" >
-         <!-- ======= Breadcrumbs ======= -->
-         <div class="breadcrumbs">
-            <div class="d-flex justify-content-between align-items-center">
-             <div class="container" data-aos="fade-up">
-               <div class="nav2 contenedorNaranja d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 116 116" fill="none" style="margin-right: 3%;">
-                        <path d="M7.25 103.312C7.25 104.755 7.82288 106.138 8.84261 107.157C9.86234 108.177 11.2454 108.75 12.6875 108.75H103.312C104.755 108.75 106.138 108.177 107.157 107.157C108.177 106.138 108.75 104.755 108.75 103.312V39.875H7.25V103.312ZM79.75 48.0312C79.75 47.7909 79.8455 47.5604 80.0154 47.3904C80.1854 47.2205 80.4159 47.125 80.6562 47.125H89.7188C89.9591 47.125 90.1896 47.2205 90.3596 47.3904C90.5295 47.5604 90.625 47.7909 90.625 48.0312V57.0938C90.625 57.3341 90.5295 57.5646 90.3596 57.7346C90.1896 57.9045 89.9591 58 89.7188 58H80.6562C80.4159 58 80.1854 57.9045 80.0154 57.7346C79.8455 57.5646 79.75 57.3341 79.75 57.0938V48.0312ZM79.75 66.1562C79.75 65.9159 79.8455 65.6854 80.0154 65.5154C80.1854 65.3455 80.4159 65.25 80.6562 65.25H89.7188C89.9591 65.25 90.1896 65.3455 90.3596 65.5154C90.5295 65.6854 90.625 65.9159 90.625 66.1562V75.2188C90.625 75.4591 90.5295 75.6896 90.3596 75.8596C90.1896 76.0295 89.9591 76.125 89.7188 76.125H80.6562C80.4159 76.125 80.1854 76.0295 80.0154 75.8596C79.8455 75.6896 79.75 75.4591 79.75 75.2188V66.1562ZM61.625 48.0312C61.625 47.7909 61.7205 47.5604 61.8904 47.3904C62.0604 47.2205 62.2909 47.125 62.5312 47.125H71.5938C71.8341 47.125 72.0646 47.2205 72.2346 47.3904C72.4045 47.5604 72.5 47.7909 72.5 48.0312V57.0938C72.5 57.3341 72.4045 57.5646 72.2346 57.7346C72.0646 57.9045 71.8341 58 71.5938 58H62.5312C62.2909 58 62.0604 57.9045 61.8904 57.7346C61.7205 57.5646 61.625 57.3341 61.625 57.0938V48.0312ZM61.625 66.1562C61.625 65.9159 61.7205 65.6854 61.8904 65.5154C62.0604 65.3455 62.2909 65.25 62.5312 65.25H71.5938C71.8341 65.25 72.0646 65.3455 72.2346 65.5154C72.4045 65.6854 72.5 65.9159 72.5 66.1562V75.2188C72.5 75.4591 72.4045 75.6896 72.2346 75.8596C72.0646 76.0295 71.8341 76.125 71.5938 76.125H62.5312C62.2909 76.125 62.0604 76.0295 61.8904 75.8596C61.7205 75.6896 61.625 75.4591 61.625 75.2188V66.1562ZM61.625 84.2812C61.625 84.0409 61.7205 83.8104 61.8904 83.6404C62.0604 83.4705 62.2909 83.375 62.5312 83.375H71.5938C71.8341 83.375 72.0646 83.4705 72.2346 83.6404C72.4045 83.8104 72.5 84.0409 72.5 84.2812V93.3438C72.5 93.5841 72.4045 93.8146 72.2346 93.9846C72.0646 94.1545 71.8341 94.25 71.5938 94.25H62.5312C62.2909 94.25 62.0604 94.1545 61.8904 93.9846C61.7205 93.8146 61.625 93.5841 61.625 93.3438V84.2812ZM43.5 66.1562C43.5 65.9159 43.5955 65.6854 43.7654 65.5154C43.9354 65.3455 44.1659 65.25 44.4062 65.25H53.4688C53.7091 65.25 53.9396 65.3455 54.1096 65.5154C54.2795 65.6854 54.375 65.9159 54.375 66.1562V75.2188C54.375 75.4591 54.2795 75.6896 54.1096 75.8596C53.9396 76.0295 53.7091 76.125 53.4688 76.125H44.4062C44.1659 76.125 43.9354 76.0295 43.7654 75.8596C43.5955 75.6896 43.5 75.4591 43.5 75.2188V66.1562ZM43.5 84.2812C43.5 84.0409 43.5955 83.8104 43.7654 83.6404C43.9354 83.4705 44.1659 83.375 44.4062 83.375H53.4688C53.7091 83.375 53.9396 83.4705 54.1096 83.6404C54.2795 83.8104 54.375 84.0409 54.375 84.2812V93.3438C54.375 93.5841 54.2795 93.8146 54.1096 93.9846C53.9396 94.1545 53.7091 94.25 53.4688 94.25H44.4062C44.1659 94.25 43.9354 94.1545 43.7654 93.9846C43.5955 93.8146 43.5 93.5841 43.5 93.3438V84.2812ZM25.375 66.1562C25.375 65.9159 25.4705 65.6854 25.6404 65.5154C25.8104 65.3455 26.0409 65.25 26.2812 65.25H35.3438C35.5841 65.25 35.8146 65.3455 35.9846 65.5154C36.1545 65.6854 36.25 65.9159 36.25 66.1562V75.2188C36.25 75.4591 36.1545 75.6896 35.9846 75.8596C35.8146 76.0295 35.5841 76.125 35.3438 76.125H26.2812C26.0409 76.125 25.8104 76.0295 25.6404 75.8596C25.4705 75.6896 25.375 75.4591 25.375 75.2188V66.1562ZM25.375 84.2812C25.375 84.0409 25.4705 83.8104 25.6404 83.6404C25.8104 83.4705 26.0409 83.375 26.2812 83.375H35.3438C35.5841 83.375 35.8146 83.4705 35.9846 83.6404C36.1545 83.8104 36.25 84.0409 36.25 84.2812V93.3438C36.25 93.5841 36.1545 93.8146 35.9846 93.9846C35.8146 94.1545 35.5841 94.25 35.3438 94.25H26.2812C26.0409 94.25 25.8104 94.1545 25.6404 93.9846C25.4705 93.8146 25.375 93.5841 25.375 93.3438V84.2812ZM103.312 14.5H90.6431V7.25H79.7681V14.5H36.2319V7.25H25.3569V14.5H12.6875C11.9762 14.494 11.2707 14.6289 10.6117 14.8967C9.95265 15.1646 9.35316 15.5602 8.84773 16.0608C8.3423 16.5614 7.94092 17.1571 7.66671 17.8135C7.39249 18.4699 7.25087 19.174 7.25 19.8854V32.625H108.75V19.8854C108.749 19.174 108.608 18.4699 108.333 17.8135C108.059 17.1571 107.658 16.5614 107.152 16.0608C106.647 15.5602 106.047 15.1646 105.388 14.8967C104.729 14.6289 104.024 14.494 103.312 14.5Z" fill="#CF8D48"/>
-                     </svg>
-                     <p class="txtActividad2" id="actividad"><span id="acHora">01:00 pm</span> <b>|</b> <span id="acTipo">Plática</span> <b>-</b>  <span id="acTema">Manejo del tiempo</span></p>
-                     <a href=""><button class="btnDetalle2" id="acDetalle">
-                     Ver actividad
-                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16" style="margin-left: 10px;">
-                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                    </svg>
-                    </button></a>
-                    <a href=""><button class="btnDetalle3" id="acDetalle">
-                     Modificar
-                     <img src="icon/editar3.png" alt="editar"style="width: 20px;;height:20px;">
-                    </button></a>
-                  </div>
+    <section class="banner_main2" style="padding: 170px 0 0 0">
+      <!-- ======= Breadcrumbs ======= -->
+      <div class="breadcrumbs">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="container" data-aos="fade-up">
+            <div
+              class="nav2 contenedorNaranja d-flex justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="75"
+                height="75"
+                viewBox="0 0 116 116"
+                fill="none"
+                style="margin-right: 3%"
+              >
+                <path
+                  d="M7.25 103.312C7.25 104.755 7.82288 106.138 8.84261 107.157C9.86234 108.177 11.2454 108.75 12.6875 108.75H103.312C104.755 108.75 106.138 108.177 107.157 107.157C108.177 106.138 108.75 104.755 108.75 103.312V39.875H7.25V103.312ZM79.75 48.0312C79.75 47.7909 79.8455 47.5604 80.0154 47.3904C80.1854 47.2205 80.4159 47.125 80.6562 47.125H89.7188C89.9591 47.125 90.1896 47.2205 90.3596 47.3904C90.5295 47.5604 90.625 47.7909 90.625 48.0312V57.0938C90.625 57.3341 90.5295 57.5646 90.3596 57.7346C90.1896 57.9045 89.9591 58 89.7188 58H80.6562C80.4159 58 80.1854 57.9045 80.0154 57.7346C79.8455 57.5646 79.75 57.3341 79.75 57.0938V48.0312ZM79.75 66.1562C79.75 65.9159 79.8455 65.6854 80.0154 65.5154C80.1854 65.3455 80.4159 65.25 80.6562 65.25H89.7188C89.9591 65.25 90.1896 65.3455 90.3596 65.5154C90.5295 65.6854 90.625 65.9159 90.625 66.1562V75.2188C90.625 75.4591 90.5295 75.6896 90.3596 75.8596C90.1896 76.0295 89.9591 76.125 89.7188 76.125H80.6562C80.4159 76.125 80.1854 76.0295 80.0154 75.8596C79.8455 75.6896 79.75 75.4591 79.75 75.2188V66.1562ZM61.625 48.0312C61.625 47.7909 61.7205 47.5604 61.8904 47.3904C62.0604 47.2205 62.2909 47.125 62.5312 47.125H71.5938C71.8341 47.125 72.0646 47.2205 72.2346 47.3904C72.4045 47.5604 72.5 47.7909 72.5 48.0312V57.0938C72.5 57.3341 72.4045 57.5646 72.2346 57.7346C72.0646 57.9045 71.8341 58 71.5938 58H62.5312C62.2909 58 62.0604 57.9045 61.8904 57.7346C61.7205 57.5646 61.625 57.3341 61.625 57.0938V48.0312ZM61.625 66.1562C61.625 65.9159 61.7205 65.6854 61.8904 65.5154C62.0604 65.3455 62.2909 65.25 62.5312 65.25H71.5938C71.8341 65.25 72.0646 65.3455 72.2346 65.5154C72.4045 65.6854 72.5 65.9159 72.5 66.1562V75.2188C72.5 75.4591 72.4045 75.6896 72.2346 75.8596C72.0646 76.0295 71.8341 76.125 71.5938 76.125H62.5312C62.2909 76.125 62.0604 76.0295 61.8904 75.8596C61.7205 75.6896 61.625 75.4591 61.625 75.2188V66.1562ZM61.625 84.2812C61.625 84.0409 61.7205 83.8104 61.8904 83.6404C62.0604 83.4705 62.2909 83.375 62.5312 83.375H71.5938C71.8341 83.375 72.0646 83.4705 72.2346 83.6404C72.4045 83.8104 72.5 84.0409 72.5 84.2812V93.3438C72.5 93.5841 72.4045 93.8146 72.2346 93.9846C72.0646 94.1545 71.8341 94.25 71.5938 94.25H62.5312C62.2909 94.25 62.0604 94.1545 61.8904 93.9846C61.7205 93.8146 61.625 93.5841 61.625 93.3438V84.2812ZM43.5 66.1562C43.5 65.9159 43.5955 65.6854 43.7654 65.5154C43.9354 65.3455 44.1659 65.25 44.4062 65.25H53.4688C53.7091 65.25 53.9396 65.3455 54.1096 65.5154C54.2795 65.6854 54.375 65.9159 54.375 66.1562V75.2188C54.375 75.4591 54.2795 75.6896 54.1096 75.8596C53.9396 76.0295 53.7091 76.125 53.4688 76.125H44.4062C44.1659 76.125 43.9354 76.0295 43.7654 75.8596C43.5955 75.6896 43.5 75.4591 43.5 75.2188V66.1562ZM43.5 84.2812C43.5 84.0409 43.5955 83.8104 43.7654 83.6404C43.9354 83.4705 44.1659 83.375 44.4062 83.375H53.4688C53.7091 83.375 53.9396 83.4705 54.1096 83.6404C54.2795 83.8104 54.375 84.0409 54.375 84.2812V93.3438C54.375 93.5841 54.2795 93.8146 54.1096 93.9846C53.9396 94.1545 53.7091 94.25 53.4688 94.25H44.4062C44.1659 94.25 43.9354 94.1545 43.7654 93.9846C43.5955 93.8146 43.5 93.5841 43.5 93.3438V84.2812ZM25.375 66.1562C25.375 65.9159 25.4705 65.6854 25.6404 65.5154C25.8104 65.3455 26.0409 65.25 26.2812 65.25H35.3438C35.5841 65.25 35.8146 65.3455 35.9846 65.5154C36.1545 65.6854 36.25 65.9159 36.25 66.1562V75.2188C36.25 75.4591 36.1545 75.6896 35.9846 75.8596C35.8146 76.0295 35.5841 76.125 35.3438 76.125H26.2812C26.0409 76.125 25.8104 76.0295 25.6404 75.8596C25.4705 75.6896 25.375 75.4591 25.375 75.2188V66.1562ZM25.375 84.2812C25.375 84.0409 25.4705 83.8104 25.6404 83.6404C25.8104 83.4705 26.0409 83.375 26.2812 83.375H35.3438C35.5841 83.375 35.8146 83.4705 35.9846 83.6404C36.1545 83.8104 36.25 84.0409 36.25 84.2812V93.3438C36.25 93.5841 36.1545 93.8146 35.9846 93.9846C35.8146 94.1545 35.5841 94.25 35.3438 94.25H26.2812C26.0409 94.25 25.8104 94.1545 25.6404 93.9846C25.4705 93.8146 25.375 93.5841 25.375 93.3438V84.2812ZM103.312 14.5H90.6431V7.25H79.7681V14.5H36.2319V7.25H25.3569V14.5H12.6875C11.9762 14.494 11.2707 14.6289 10.6117 14.8967C9.95265 15.1646 9.35316 15.5602 8.84773 16.0608C8.3423 16.5614 7.94092 17.1571 7.66671 17.8135C7.39249 18.4699 7.25087 19.174 7.25 19.8854V32.625H108.75V19.8854C108.749 19.174 108.608 18.4699 108.333 17.8135C108.059 17.1571 107.658 16.5614 107.152 16.0608C106.647 15.5602 106.047 15.1646 105.388 14.8967C104.729 14.6289 104.024 14.494 103.312 14.5Z"
+                  fill="#CF8D48"
+                />
+              </svg>
+              <p class="txtActividad2" id="actividad">
+                <span id="acHora">01:00 pm</span> <b>|</b>
+                <span id="acTipo">Plática</span> <b>-</b>
+                <span id="acTema">Manejo del tiempo</span>
+              </p>
+              <a href=""
+                ><button class="btnDetalle2" id="acDetalle">
+                  Ver actividad
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-eye-fill"
+                    viewBox="0 0 16 16"
+                    style="margin-left: 10px"
+                  >
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                    <path
+                      d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"
+                    />
+                  </svg></button
+              ></a>
+              <a href=""
+                ><button class="btnDetalle3" id="acDetalle">
+                  Modificar
+                  <img
+                    src="icon/editar3.png"
+                    alt="editar"
+                    style="width: 20px; height: 20px"
+                  /></button
+              ></a>
+            </div>
 
-                  <div class="contenedorNaranja" style="  flex-direction: column;">
-                     <!-- Contenedor superior para el título -->
-                     <div class="titulo-container">
-                         <div class="nav " data-aos="fade-up" data-aos-delay="50">
-                             <p class="txt2">Alumnos inscritos:</p>
-                         </div>
-                     </div>
-                 
-                     <!-- Contenedor inferior para los alumnos -->
-                     <div class="alumnos-container">
-                         
-                     </div>                             
-            </div><!--end of contenedorGris -->
-         </div>
+            <div class="contenedorNaranja" style="flex-direction: column">
+              <!-- Contenedor superior para el título -->
+              <div class="titulo-container">
+                <div class="nav" data-aos="fade-up" data-aos-delay="50">
+                  <p class="txt2">Alumnos inscritos:</p>
+                </div>
+              </div>
+
+              <!-- Contenedor inferior para los alumnos -->
+              <div class="alumnos-container" id="alumnos-table">
+                <table
+                  id="tabla-alumnos"
+                  border="1"
+                  class="mi-tabla-estilizada"
+                >
+                  <!-- Encabezados de la tabla -->
+                  <tr>
+                    <th>No Control</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Carrera</th>
+                    <th>Grupo</th>
+                    <th>Correo</th>
+                    <th>Contraseña</th>
+                    <th>Acciones</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!--end of contenedorNaranja -->
+          </div>
+        </div>
       </div>
-   </div>
-      </section>
-      <!-- end banner -->
+    </section>
+    <!-- end banner -->
 
     <!-- footer -->
     <footer>
@@ -180,7 +251,8 @@
             <div class="col-md-12">
               <p>
                 © 2019 All Rights Reserved. Design by<a href="#hola">
-                  CodeSlaves</a>
+                  CodeSlaves</a
+                >
               </p>
             </div>
           </div>
@@ -188,48 +260,107 @@
       </div>
     </footer>
     <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script>
-         function openNav() {
-           document.getElementById("mySidepanel").style.width = "250px";
-         }
-         
-         function closeNav() {
-           document.getElementById("mySidepanel").style.width = "0";
-         }
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
 
-         function openNav2() {
-          document.getElementById("mySidepanel2").style.width = "auto";
-          }
-          function closeNav2() {
-           document.getElementById("mySidepanel2").style.width = "0";
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+
+      function openNav2() {
+        document.getElementById("mySidepanel2").style.width = "auto";
+      }
+      function closeNav2() {
+        document.getElementById("mySidepanel2").style.width = "0";
+      }
+    </script>
+    <script>
+      // Función para obtener parámetros GET de la URL
+      function getParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      }
+
+      // Obtener los parámetros de la URL
+      const nombre = getParam("nombre");
+      const apaterno = getParam("apaterno");
+      const amaterno = getParam("amaterno");
+
+      // Mostrar el nombre y apellidos en el span correspondiente
+      const spanNombre = document.getElementById("nombreTutor");
+      if (spanNombre) {
+        spanNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
+      }
+      nombreCompT;
+
+      // Mostrar el nombre y apellidos en el p correspondiente
+      const pNombre = document.getElementById("nombreCompT");
+      if (pNombre) {
+        pNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
+      }
+    </script>
+
+   <!-- ... (otros elementos HTML) ... -->
+
+<script>
+   // Función para obtener y mostrar los datos de los alumnos
+   function mostrarDatosAlumnos() {
+     // Realizar una solicitud al script Python
+     fetch("/tutotec/cgi-bin/consultar_alumnos.py")
+       .then((response) => response.json())
+       .then((data) => {
+         const tabla = document.getElementById("tabla-alumnos");
+ 
+         // Limpiar la tabla (excepto los encabezados)
+         while (tabla.rows.length > 1) {
+           tabla.deleteRow(1);
          }
-      </script>
-      <script>
-        // Función para obtener parámetros GET de la URL
-        function getParam(name) {
-          const urlParams = new URLSearchParams(window.location.search);
-          return urlParams.get(name);
-        }
-      
-        // Obtener los parámetros de la URL
-        const nombre = getParam('nombre');
-        const apaterno = getParam('apaterno');
-        const amaterno = getParam('amaterno');
-      
-        // Mostrar el nombre y apellidos en el span correspondiente
-        const spanNombre = document.getElementById('nombreTutor');
-        if (spanNombre) {
-          spanNombre.textContent = `${nombre} ${apaterno} ${amaterno}`;
-        }
-      </script>
-   </body>
+ 
+         data.forEach((row) => {
+           const newRow = tabla.insertRow(-1);
+           row.forEach((cell, index) => {
+             const newCell = newRow.insertCell(-1);
+             newCell.textContent = cell;
+ 
+             if (index === row.length - 1) {
+               const actionCell = newRow.insertCell();
+               const deleteButton = document.createElement("button");
+               deleteButton.textContent = "Eliminar";
+               deleteButton.addEventListener("click", () => eliminarAlumno(cell)); // Llamar a la función de eliminación con el no_control
+               actionCell.appendChild(deleteButton);
+             }
+           });
+         });
+       })
+       .catch((error) => console.error("Hubo un error:", error));
+   }
+ 
+   // Función para eliminar un alumno
+   function eliminarAlumno(noControl) {
+     fetch(`/tutotec/cgi-bin/eliminar_alumno.py?no_control=${noControl}`)
+       .then((response) => {
+         if (response.ok) {
+           mostrarDatosAlumnos(); // Actualizar la tabla después de eliminar el alumno
+         } else {
+           console.error("Error al eliminar el alumno.");
+         }
+       })
+       .catch((error) => console.error("Hubo un error:", error));
+   }
+ 
+   // Llamar a la función para mostrar los datos al cargar la página
+   window.onload = mostrarDatosAlumnos;
+ </script>
+ 
+  </body>
 </html>
-

@@ -1,0 +1,44 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
+@import url("https://db.onlinewebfonts.com/c/ff8d333744c79e02371ad74ca79dd9a3?family=Fyodor+Bold+Expanded");
+
+/* ESTILO TABLA */
+.mi-tabla-estilizada {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.mi-tabla-estilizada th {
+  border: 1px solid #efdda9;
+  padding: 8px;
+  text-align: center;
+  color: #a27644;
+  text-align: center;
+  font-family: Fyodor;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.mi-tabla-estilizada td {
+  border: 1px solid #efdda9;
+  font-family: Gafata;
+  padding-left: 5px;
+  font-weight: 600;
+}
+.mi-tabla-estilizada button {
+  background-color: #cf8d48;
+  text-align: center;
+  font-family: Gafata;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+  margin: 5px;
+}
